@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324F091728F0B28E00AE6009 /* RzagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F091628F0B28E00AE6009 /* RzagramApp.swift */; };
+		324F091B28F0B28F00AE6009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324F091A28F0B28F00AE6009 /* Assets.xcassets */; };
+		324F091E28F0B28F00AE6009 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324F091D28F0B28F00AE6009 /* Preview Assets.xcassets */; };
+		324F09EB28F0D30D00AE6009 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F099228F0C46100AE6009 /* data.framework */; };
+		324F09EC28F0D30D00AE6009 /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324F099228F0C46100AE6009 /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		324F09ED28F0D30D00AE6009 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E028F0D2CC00AE6009 /* domain.framework */; };
+		324F09EE28F0D30D00AE6009 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E028F0D2CC00AE6009 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		325487BB290442B800BAF842 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487B9290442B800BAF842 /* local.framework */; };
+		325487BC290442B800BAF842 /* local.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487B9290442B800BAF842 /* local.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		325487BD290442B800BAF842 /* remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487BA290442B800BAF842 /* remote.framework */; };
+		325487BE290442B800BAF842 /* remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487BA290442B800BAF842 /* remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		325487FA2904535500BAF842 /* presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487F72904534000BAF842 /* presenter.framework */; };
+		325487FB2904535500BAF842 /* presenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487F72904534000BAF842 /* presenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32BBE7BA29033F0F005900E2 /* global.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE74A290334A0005900E2 /* global.framework */; };
+		32BBE7BB29033F0F005900E2 /* global.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE74A290334A0005900E2 /* global.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		324F099128F0C46100AE6009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324F098C28F0C46000AE6009 /* data.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 324F097428F0C46000AE6009;
+			remoteInfo = data;
+		};
+		324F099328F0C46100AE6009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324F098C28F0C46000AE6009 /* data.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 324F097C28F0C46000AE6009;
+			remoteInfo = dataTests;
+		};
+		324F09DF28F0D2CC00AE6009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 324F09C228F0D2CB00AE6009;
+			remoteInfo = domain;
+		};
+		324F09E128F0D2CC00AE6009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 324F09CA28F0D2CB00AE6009;
+			remoteInfo = domainTests;
+		};
+		325487F62904534000BAF842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 325487F12904533F00BAF842 /* presenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 325487D92904533F00BAF842;
+			remoteInfo = presenter;
+		};
+		325487F82904534000BAF842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 325487F12904533F00BAF842 /* presenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 325487E12904533F00BAF842;
+			remoteInfo = presenterTests;
+		};
+		32BBE749290334A0005900E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BBE7412903349F005900E2 /* global.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32BBE7372903349F005900E2;
+			remoteInfo = global;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		324F094B28F0C35900AE6009 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				324F09EE28F0D30D00AE6009 /* domain.framework in Embed Frameworks */,
+				324F09EC28F0D30D00AE6009 /* data.framework in Embed Frameworks */,
+				325487BC290442B800BAF842 /* local.framework in Embed Frameworks */,
+				325487FB2904535500BAF842 /* presenter.framework in Embed Frameworks */,
+				32BBE7BB29033F0F005900E2 /* global.framework in Embed Frameworks */,
+				325487BE290442B800BAF842 /* remote.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		323069D629103ECA003AB9AC /* Rzagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rzagram.entitlements; sourceTree = "<group>"; };
+		324F091328F0B28E00AE6009 /* Rzagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rzagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		324F091628F0B28E00AE6009 /* RzagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RzagramApp.swift; sourceTree = "<group>"; };
+		324F091A28F0B28F00AE6009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		324F091D28F0B28F00AE6009 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		324F092428F0B31A00AE6009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		324F098C28F0C46000AE6009 /* data.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = data.xcodeproj; path = data/data.xcodeproj; sourceTree = "<group>"; };
+		324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = domain.xcodeproj; path = domain/domain.xcodeproj; sourceTree = "<group>"; };
+		325487B9290442B800BAF842 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		325487BA290442B800BAF842 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		325487F12904533F00BAF842 /* presenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = presenter.xcodeproj; path = presenter/presenter.xcodeproj; sourceTree = "<group>"; };
+		32BBE7412903349F005900E2 /* global.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = global.xcodeproj; path = global/global.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324F091028F0B28E00AE6009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324F09ED28F0D30D00AE6009 /* domain.framework in Frameworks */,
+				324F09EB28F0D30D00AE6009 /* data.framework in Frameworks */,
+				325487BB290442B800BAF842 /* local.framework in Frameworks */,
+				325487FA2904535500BAF842 /* presenter.framework in Frameworks */,
+				32BBE7BA29033F0F005900E2 /* global.framework in Frameworks */,
+				325487BD290442B800BAF842 /* remote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324F090A28F0B28E00AE6009 = {
+			isa = PBXGroup;
+			children = (
+				32BBE7412903349F005900E2 /* global.xcodeproj */,
+				325487F12904533F00BAF842 /* presenter.xcodeproj */,
+				324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */,
+				324F098C28F0C46000AE6009 /* data.xcodeproj */,
+				324F091528F0B28E00AE6009 /* Rzagram */,
+				324F091428F0B28E00AE6009 /* Products */,
+				324F092B28F0C10100AE6009 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		324F091428F0B28E00AE6009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324F091328F0B28E00AE6009 /* Rzagram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324F091528F0B28E00AE6009 /* Rzagram */ = {
+			isa = PBXGroup;
+			children = (
+				323069D629103ECA003AB9AC /* Rzagram.entitlements */,
+				324F091628F0B28E00AE6009 /* RzagramApp.swift */,
+				324F091A28F0B28F00AE6009 /* Assets.xcassets */,
+				324F092428F0B31A00AE6009 /* Info.plist */,
+				324F091C28F0B28F00AE6009 /* Preview Content */,
+			);
+			path = Rzagram;
+			sourceTree = "<group>";
+		};
+		324F091C28F0B28F00AE6009 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				324F091D28F0B28F00AE6009 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		324F092B28F0C10100AE6009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				325487B9290442B800BAF842 /* local.framework */,
+				325487BA290442B800BAF842 /* remote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		324F098D28F0C46000AE6009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324F099228F0C46100AE6009 /* data.framework */,
+				324F099428F0C46100AE6009 /* dataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324F09DB28F0D2CB00AE6009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324F09E028F0D2CC00AE6009 /* domain.framework */,
+				324F09E228F0D2CC00AE6009 /* domainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		325487F22904533F00BAF842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				325487F72904534000BAF842 /* presenter.framework */,
+				325487F92904534000BAF842 /* presenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32BBE7422903349F005900E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32BBE74A290334A0005900E2 /* global.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324F091228F0B28E00AE6009 /* Rzagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324F092128F0B28F00AE6009 /* Build configuration list for PBXNativeTarget "Rzagram" */;
+			buildPhases = (
+				324F090F28F0B28E00AE6009 /* Sources */,
+				324F091028F0B28E00AE6009 /* Frameworks */,
+				324F091128F0B28E00AE6009 /* Resources */,
+				324F094B28F0C35900AE6009 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rzagram;
+			packageProductDependencies = (
+			);
+			productName = Rzagram;
+			productReference = 324F091328F0B28E00AE6009 /* Rzagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324F090B28F0B28E00AE6009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					324F091228F0B28E00AE6009 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 324F090E28F0B28E00AE6009 /* Build configuration list for PBXProject "Rzagram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 324F090A28F0B28E00AE6009;
+			productRefGroup = 324F091428F0B28E00AE6009 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 324F098D28F0C46000AE6009 /* Products */;
+					ProjectRef = 324F098C28F0C46000AE6009 /* data.xcodeproj */;
+				},
+				{
+					ProductGroup = 324F09DB28F0D2CB00AE6009 /* Products */;
+					ProjectRef = 324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */;
+				},
+				{
+					ProductGroup = 32BBE7422903349F005900E2 /* Products */;
+					ProjectRef = 32BBE7412903349F005900E2 /* global.xcodeproj */;
+				},
+				{
+					ProductGroup = 325487F22904533F00BAF842 /* Products */;
+					ProjectRef = 325487F12904533F00BAF842 /* presenter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				324F091228F0B28E00AE6009 /* Rzagram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		324F099228F0C46100AE6009 /* data.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = data.framework;
+			remoteRef = 324F099128F0C46100AE6009 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		324F099428F0C46100AE6009 /* dataTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = dataTests.xctest;
+			remoteRef = 324F099328F0C46100AE6009 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		324F09E028F0D2CC00AE6009 /* domain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = domain.framework;
+			remoteRef = 324F09DF28F0D2CC00AE6009 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		324F09E228F0D2CC00AE6009 /* domainTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = domainTests.xctest;
+			remoteRef = 324F09E128F0D2CC00AE6009 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		325487F72904534000BAF842 /* presenter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = presenter.framework;
+			remoteRef = 325487F62904534000BAF842 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		325487F92904534000BAF842 /* presenterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = presenterTests.xctest;
+			remoteRef = 325487F82904534000BAF842 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32BBE74A290334A0005900E2 /* global.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = global.framework;
+			remoteRef = 32BBE749290334A0005900E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		324F091128F0B28E00AE6009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324F091E28F0B28F00AE6009 /* Preview Assets.xcassets in Resources */,
+				324F091B28F0B28F00AE6009 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324F090F28F0B28E00AE6009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324F091728F0B28E00AE6009 /* RzagramApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		324F091F28F0B28F00AE6009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		324F092028F0B28F00AE6009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		324F092228F0B28F00AE6009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rzagram/Rzagram.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rzagram/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rzagram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rzagram;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.rza.Rzagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		324F092328F0B28F00AE6009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rzagram/Rzagram.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rzagram/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rzagram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rzagram;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.rza.Rzagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324F090E28F0B28E00AE6009 /* Build configuration list for PBXProject "Rzagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324F091F28F0B28F00AE6009 /* Debug */,
+				324F092028F0B28F00AE6009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324F092128F0B28F00AE6009 /* Build configuration list for PBXNativeTarget "Rzagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324F092228F0B28F00AE6009 /* Debug */,
+				324F092328F0B28F00AE6009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 324F090B28F0B28E00AE6009 /* Project object */;
+}
