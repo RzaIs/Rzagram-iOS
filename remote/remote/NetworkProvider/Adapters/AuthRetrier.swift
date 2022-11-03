@@ -9,6 +9,8 @@ import Alamofire
 
 class AuthRetrier: RequestRetrier {
     
+    private let maxCount: Int = 5
+    
     private let baseURL: String
     private let getRefreshToken: () -> String?
     private let setAccessToken: (String) throws -> Void
@@ -32,6 +34,10 @@ class AuthRetrier: RequestRetrier {
             return
         }
         guard request.response?.statusCode != 401 else {
+            completion(.doNotRetry)
+            return
+        }
+        guard request.retryCount < self.maxCount else {
             completion(.doNotRetry)
             return
         }

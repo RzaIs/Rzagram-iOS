@@ -9,18 +9,18 @@ import Swinject
 import domain
 
 class Router: RouterProtocol {
-    private let r: Resolver
+    private let inject: PresenterInject
     
-    init(resolver: Resolver) {
-        self.r = resolver
+    init(inject: PresenterInject) {
+        self.inject = inject
     }
     
     var mainPage: MainPage {
-        self.r.resolve(MainPage.self)!
+        self.inject.mainPage
     }
 
     var authPage: AuthPage {
-        self.r.resolve(AuthPage.self)!
+        self.inject.authPage
     }
 }
 
@@ -29,7 +29,6 @@ class Router: RouterProtocol {
 class RouterMock: RouterProtocol {
     
     static let router: RouterMock = .init()
-    
     
     var authGetLoginStateValue: Bool = false
     var authObserveLoginStateValue: Bool = false

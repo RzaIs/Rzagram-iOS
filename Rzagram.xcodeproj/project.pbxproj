@@ -20,8 +20,6 @@
 		325487BE290442B800BAF842 /* remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487BA290442B800BAF842 /* remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		325487FA2904535500BAF842 /* presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487F72904534000BAF842 /* presenter.framework */; };
 		325487FB2904535500BAF842 /* presenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487F72904534000BAF842 /* presenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		32BBE7BA29033F0F005900E2 /* global.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE74A290334A0005900E2 /* global.framework */; };
-		32BBE7BB29033F0F005900E2 /* global.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE74A290334A0005900E2 /* global.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +65,33 @@
 			remoteGlobalIDString = 325487E12904533F00BAF842;
 			remoteInfo = presenterTests;
 		};
-		32BBE749290334A0005900E2 /* PBXContainerItemProxy */ = {
+		32BA4E1029142FC90013ABA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 32BBE7412903349F005900E2 /* global.xcodeproj */;
+			containerPortal = 32BA4E0429142FC80013ABA4 /* remote.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 32BBE7372903349F005900E2;
-			remoteInfo = global;
+			remoteGlobalIDString = 32BA4DEC29142FC80013ABA4;
+			remoteInfo = remote;
+		};
+		32BA4E1229142FC90013ABA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BA4E0429142FC80013ABA4 /* remote.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32BA4DF429142FC80013ABA4;
+			remoteInfo = remoteTests;
+		};
+		32BA4E5E291430BB0013ABA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BA4E59291430BB0013ABA4 /* local.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32BA4E41291430BB0013ABA4;
+			remoteInfo = local;
+		};
+		32BA4E60291430BB0013ABA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BA4E59291430BB0013ABA4 /* local.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32BA4E49291430BB0013ABA4;
+			remoteInfo = localTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,7 +106,6 @@
 				324F09EC28F0D30D00AE6009 /* data.framework in Embed Frameworks */,
 				325487BC290442B800BAF842 /* local.framework in Embed Frameworks */,
 				325487FB2904535500BAF842 /* presenter.framework in Embed Frameworks */,
-				32BBE7BB29033F0F005900E2 /* global.framework in Embed Frameworks */,
 				325487BE290442B800BAF842 /* remote.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -107,7 +125,8 @@
 		325487B9290442B800BAF842 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		325487BA290442B800BAF842 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		325487F12904533F00BAF842 /* presenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = presenter.xcodeproj; path = presenter/presenter.xcodeproj; sourceTree = "<group>"; };
-		32BBE7412903349F005900E2 /* global.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = global.xcodeproj; path = global/global.xcodeproj; sourceTree = "<group>"; };
+		32BA4E0429142FC80013ABA4 /* remote.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = remote.xcodeproj; path = remote/remote.xcodeproj; sourceTree = "<group>"; };
+		32BA4E59291430BB0013ABA4 /* local.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = local.xcodeproj; path = local/local.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +138,6 @@
 				324F09EB28F0D30D00AE6009 /* data.framework in Frameworks */,
 				325487BB290442B800BAF842 /* local.framework in Frameworks */,
 				325487FA2904535500BAF842 /* presenter.framework in Frameworks */,
-				32BBE7BA29033F0F005900E2 /* global.framework in Frameworks */,
 				325487BD290442B800BAF842 /* remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,9 +148,10 @@
 		324F090A28F0B28E00AE6009 = {
 			isa = PBXGroup;
 			children = (
-				32BBE7412903349F005900E2 /* global.xcodeproj */,
 				325487F12904533F00BAF842 /* presenter.xcodeproj */,
 				324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */,
+				32BA4E0429142FC80013ABA4 /* remote.xcodeproj */,
+				32BA4E59291430BB0013ABA4 /* local.xcodeproj */,
 				324F098C28F0C46000AE6009 /* data.xcodeproj */,
 				324F091528F0B28E00AE6009 /* Rzagram */,
 				324F091428F0B28E00AE6009 /* Products */,
@@ -204,10 +223,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32BBE7422903349F005900E2 /* Products */ = {
+		32BA4E0529142FC80013ABA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE74A290334A0005900E2 /* global.framework */,
+				32BA4E1129142FC90013ABA4 /* remote.framework */,
+				32BA4E1329142FC90013ABA4 /* remoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32BA4E5A291430BB0013ABA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32BA4E5F291430BB0013ABA4 /* local.framework */,
+				32BA4E61291430BB0013ABA4 /* localTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,12 +300,16 @@
 					ProjectRef = 324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */;
 				},
 				{
-					ProductGroup = 32BBE7422903349F005900E2 /* Products */;
-					ProjectRef = 32BBE7412903349F005900E2 /* global.xcodeproj */;
+					ProductGroup = 32BA4E5A291430BB0013ABA4 /* Products */;
+					ProjectRef = 32BA4E59291430BB0013ABA4 /* local.xcodeproj */;
 				},
 				{
 					ProductGroup = 325487F22904533F00BAF842 /* Products */;
 					ProjectRef = 325487F12904533F00BAF842 /* presenter.xcodeproj */;
+				},
+				{
+					ProductGroup = 32BA4E0529142FC80013ABA4 /* Products */;
+					ProjectRef = 32BA4E0429142FC80013ABA4 /* remote.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -329,11 +362,32 @@
 			remoteRef = 325487F82904534000BAF842 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		32BBE74A290334A0005900E2 /* global.framework */ = {
+		32BA4E1129142FC90013ABA4 /* remote.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = global.framework;
-			remoteRef = 32BBE749290334A0005900E2 /* PBXContainerItemProxy */;
+			path = remote.framework;
+			remoteRef = 32BA4E1029142FC90013ABA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32BA4E1329142FC90013ABA4 /* remoteTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = remoteTests.xctest;
+			remoteRef = 32BA4E1229142FC90013ABA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32BA4E5F291430BB0013ABA4 /* local.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = local.framework;
+			remoteRef = 32BA4E5E291430BB0013ABA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32BA4E61291430BB0013ABA4 /* localTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = localTests.xctest;
+			remoteRef = 32BA4E60291430BB0013ABA4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

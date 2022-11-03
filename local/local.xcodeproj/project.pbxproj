@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32BBE77029033567005900E2 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE76729033567005900E2 /* local.framework */; };
-		32BBE77529033567005900E2 /* localTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE77429033567005900E2 /* localTests.swift */; };
-		32BBE77629033567005900E2 /* local.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BBE76A29033567005900E2 /* local.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32BBE7982903368F005900E2 /* LocalAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE7972903368F005900E2 /* LocalAssembly.swift */; };
-		32BBE79B290336C1005900E2 /* AuthLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE79A290336C1005900E2 /* AuthLocalDataSourceProtocol.swift */; };
-		32BBE7A3290336E0005900E2 /* AuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE7A2290336E0005900E2 /* AuthLocalDataSource.swift */; };
-		32BBE7A529033702005900E2 /* DataKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE7A429033702005900E2 /* DataKey.swift */; };
-		32BBE7A729033718005900E2 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE7A629033718005900E2 /* DatabaseProviderProtocol.swift */; };
-		32BBE7A929033725005900E2 /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBE7A829033725005900E2 /* DatabaseProvider.swift */; };
-		32BBE7AC2903376C005900E2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 32BBE7AB2903376C005900E2 /* Realm */; };
-		32BBE7AE2903376C005900E2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32BBE7AD2903376C005900E2 /* RealmSwift */; };
-		32BBE7B12903378C005900E2 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 32BBE7B02903378C005900E2 /* KeychainAccess */; };
-		32BBE7B429033833005900E2 /* global.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE7B329033833005900E2 /* global.framework */; };
-		32BBE7B529033833005900E2 /* global.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE7B329033833005900E2 /* global.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32BA4E4A291430BB0013ABA4 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E41291430BB0013ABA4 /* local.framework */; };
+		32BA4E4F291430BB0013ABA4 /* localTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E4E291430BB0013ABA4 /* localTests.swift */; };
+		32BA4E50291430BB0013ABA4 /* local.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BA4E44291430BB0013ABA4 /* local.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32BA4E64291430EA0013ABA4 /* LocalInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E63291430EA0013ABA4 /* LocalInject.swift */; };
+		32BA4E692914316F0013ABA4 /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E662914316F0013ABA4 /* DatabaseProviderProtocol.swift */; };
+		32BA4E6A2914316F0013ABA4 /* DatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E672914316F0013ABA4 /* DatabaseProvider.swift */; };
+		32BA4E6B2914316F0013ABA4 /* DataKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E682914316F0013ABA4 /* DataKey.swift */; };
+		32BA4E71291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E6F291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift */; };
+		32BA4E72291431A30013ABA4 /* AuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E70291431A30013ABA4 /* AuthLocalDataSource.swift */; };
+		32BA4E75291431C30013ABA4 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E74291431C30013ABA4 /* domain.framework */; };
+		32BA4E76291431C30013ABA4 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E74291431C30013ABA4 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32BA4E85291432BA0013ABA4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E84291432BA0013ABA4 /* Realm */; };
+		32BA4E87291432BA0013ABA4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E86291432BA0013ABA4 /* RealmSwift */; };
+		32BA4E8A291432F70013ABA4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E89291432F70013ABA4 /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32BBE77129033567005900E2 /* PBXContainerItemProxy */ = {
+		32BA4E4B291430BB0013ABA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 32BBE75E29033567005900E2 /* Project object */;
+			containerPortal = 32BA4E38291430BB0013ABA4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 32BBE76629033567005900E2;
+			remoteGlobalIDString = 32BA4E40291430BB0013ABA4;
 			remoteInfo = local;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		32BBE7B629033833005900E2 /* Embed Frameworks */ = {
+		32BA4E77291431C30013ABA4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32BBE7B529033833005900E2 /* global.framework in Embed Frameworks */,
+				32BA4E76291431C30013ABA4 /* domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,127 +48,127 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32BBE76729033567005900E2 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32BBE76A29033567005900E2 /* local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = local.h; sourceTree = "<group>"; };
-		32BBE76F29033567005900E2 /* localTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = localTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32BBE77429033567005900E2 /* localTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localTests.swift; sourceTree = "<group>"; };
-		32BBE7972903368F005900E2 /* LocalAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAssembly.swift; sourceTree = "<group>"; };
-		32BBE79A290336C1005900E2 /* AuthLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
-		32BBE7A2290336E0005900E2 /* AuthLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSource.swift; sourceTree = "<group>"; };
-		32BBE7A429033702005900E2 /* DataKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataKey.swift; sourceTree = "<group>"; };
-		32BBE7A629033718005900E2 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
-		32BBE7A829033725005900E2 /* DatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
-		32BBE7B329033833005900E2 /* global.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = global.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BA4E41291430BB0013ABA4 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BA4E44291430BB0013ABA4 /* local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = local.h; sourceTree = "<group>"; };
+		32BA4E49291430BB0013ABA4 /* localTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = localTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BA4E4E291430BB0013ABA4 /* localTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localTests.swift; sourceTree = "<group>"; };
+		32BA4E63291430EA0013ABA4 /* LocalInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInject.swift; sourceTree = "<group>"; };
+		32BA4E662914316F0013ABA4 /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
+		32BA4E672914316F0013ABA4 /* DatabaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProvider.swift; sourceTree = "<group>"; };
+		32BA4E682914316F0013ABA4 /* DataKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataKey.swift; sourceTree = "<group>"; };
+		32BA4E6F291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
+		32BA4E70291431A30013ABA4 /* AuthLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSource.swift; sourceTree = "<group>"; };
+		32BA4E74291431C30013ABA4 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32BBE76429033567005900E2 /* Frameworks */ = {
+		32BA4E3E291430BB0013ABA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BBE7AE2903376C005900E2 /* RealmSwift in Frameworks */,
-				32BBE7B429033833005900E2 /* global.framework in Frameworks */,
-				32BBE7AC2903376C005900E2 /* Realm in Frameworks */,
-				32BBE7B12903378C005900E2 /* KeychainAccess in Frameworks */,
+				32BA4E8A291432F70013ABA4 /* KeychainAccess in Frameworks */,
+				32BA4E87291432BA0013ABA4 /* RealmSwift in Frameworks */,
+				32BA4E85291432BA0013ABA4 /* Realm in Frameworks */,
+				32BA4E75291431C30013ABA4 /* domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32BBE76C29033567005900E2 /* Frameworks */ = {
+		32BA4E46291430BB0013ABA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BBE77029033567005900E2 /* local.framework in Frameworks */,
+				32BA4E4A291430BB0013ABA4 /* local.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32BBE75D29033567005900E2 = {
+		32BA4E37291430BB0013ABA4 = {
 			isa = PBXGroup;
 			children = (
-				32BBE76929033567005900E2 /* local */,
-				32BBE77329033567005900E2 /* localTests */,
-				32BBE76829033567005900E2 /* Products */,
-				32BBE7B229033833005900E2 /* Frameworks */,
+				32BA4E43291430BB0013ABA4 /* local */,
+				32BA4E4D291430BB0013ABA4 /* localTests */,
+				32BA4E42291430BB0013ABA4 /* Products */,
+				32BA4E73291431C30013ABA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		32BBE76829033567005900E2 /* Products */ = {
+		32BA4E42291430BB0013ABA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE76729033567005900E2 /* local.framework */,
-				32BBE76F29033567005900E2 /* localTests.xctest */,
+				32BA4E41291430BB0013ABA4 /* local.framework */,
+				32BA4E49291430BB0013ABA4 /* localTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32BBE76929033567005900E2 /* local */ = {
+		32BA4E43291430BB0013ABA4 /* local */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE790290335C9005900E2 /* DI */,
-				32BBE7892903357C005900E2 /* Models */,
-				32BBE78A2903359A005900E2 /* DataSources */,
-				32BBE791290335DE005900E2 /* DatabaseProvider */,
-				32BBE76A29033567005900E2 /* local.h */,
+				32BA4E62291430CF0013ABA4 /* Inject */,
+				32BA4E65291431560013ABA4 /* DatabaseProvider */,
+				32BA4E6C2914317D0013ABA4 /* Models */,
+				32BA4E6D2914318B0013ABA4 /* DataSources */,
+				32BA4E44291430BB0013ABA4 /* local.h */,
 			);
 			path = local;
 			sourceTree = "<group>";
 		};
-		32BBE77329033567005900E2 /* localTests */ = {
+		32BA4E4D291430BB0013ABA4 /* localTests */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE77429033567005900E2 /* localTests.swift */,
+				32BA4E4E291430BB0013ABA4 /* localTests.swift */,
 			);
 			path = localTests;
 			sourceTree = "<group>";
 		};
-		32BBE7892903357C005900E2 /* Models */ = {
+		32BA4E62291430CF0013ABA4 /* Inject */ = {
+			isa = PBXGroup;
+			children = (
+				32BA4E63291430EA0013ABA4 /* LocalInject.swift */,
+			);
+			path = Inject;
+			sourceTree = "<group>";
+		};
+		32BA4E65291431560013ABA4 /* DatabaseProvider */ = {
+			isa = PBXGroup;
+			children = (
+				32BA4E682914316F0013ABA4 /* DataKey.swift */,
+				32BA4E662914316F0013ABA4 /* DatabaseProviderProtocol.swift */,
+				32BA4E672914316F0013ABA4 /* DatabaseProvider.swift */,
+			);
+			path = DatabaseProvider;
+			sourceTree = "<group>";
+		};
+		32BA4E6C2914317D0013ABA4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		32BBE78A2903359A005900E2 /* DataSources */ = {
+		32BA4E6D2914318B0013ABA4 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE799290336BA005900E2 /* Auth */,
+				32BA4E6E2914319B0013ABA4 /* Auth */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
 		};
-		32BBE790290335C9005900E2 /* DI */ = {
+		32BA4E6E2914319B0013ABA4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE7972903368F005900E2 /* LocalAssembly.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		32BBE791290335DE005900E2 /* DatabaseProvider */ = {
-			isa = PBXGroup;
-			children = (
-				32BBE7A429033702005900E2 /* DataKey.swift */,
-				32BBE7A629033718005900E2 /* DatabaseProviderProtocol.swift */,
-				32BBE7A829033725005900E2 /* DatabaseProvider.swift */,
-			);
-			path = DatabaseProvider;
-			sourceTree = "<group>";
-		};
-		32BBE799290336BA005900E2 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				32BBE79A290336C1005900E2 /* AuthLocalDataSourceProtocol.swift */,
-				32BBE7A2290336E0005900E2 /* AuthLocalDataSource.swift */,
+				32BA4E6F291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift */,
+				32BA4E70291431A30013ABA4 /* AuthLocalDataSource.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		32BBE7B229033833005900E2 /* Frameworks */ = {
+		32BA4E73291431C30013ABA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32BBE7B329033833005900E2 /* global.framework */,
+				32BA4E74291431C30013ABA4 /* domain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,26 +176,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		32BBE76229033567005900E2 /* Headers */ = {
+		32BA4E3C291430BB0013ABA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BBE77629033567005900E2 /* local.h in Headers */,
+				32BA4E50291430BB0013ABA4 /* local.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		32BBE76629033567005900E2 /* local */ = {
+		32BA4E40291430BB0013ABA4 /* local */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32BBE77929033567005900E2 /* Build configuration list for PBXNativeTarget "local" */;
+			buildConfigurationList = 32BA4E53291430BB0013ABA4 /* Build configuration list for PBXNativeTarget "local" */;
 			buildPhases = (
-				32BBE76229033567005900E2 /* Headers */,
-				32BBE76329033567005900E2 /* Sources */,
-				32BBE76429033567005900E2 /* Frameworks */,
-				32BBE76529033567005900E2 /* Resources */,
-				32BBE7B629033833005900E2 /* Embed Frameworks */,
+				32BA4E3C291430BB0013ABA4 /* Headers */,
+				32BA4E3D291430BB0013ABA4 /* Sources */,
+				32BA4E3E291430BB0013ABA4 /* Frameworks */,
+				32BA4E3F291430BB0013ABA4 /* Resources */,
+				32BA4E77291431C30013ABA4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,52 +203,52 @@
 			);
 			name = local;
 			packageProductDependencies = (
-				32BBE7AB2903376C005900E2 /* Realm */,
-				32BBE7AD2903376C005900E2 /* RealmSwift */,
-				32BBE7B02903378C005900E2 /* KeychainAccess */,
+				32BA4E84291432BA0013ABA4 /* Realm */,
+				32BA4E86291432BA0013ABA4 /* RealmSwift */,
+				32BA4E89291432F70013ABA4 /* KeychainAccess */,
 			);
 			productName = local;
-			productReference = 32BBE76729033567005900E2 /* local.framework */;
+			productReference = 32BA4E41291430BB0013ABA4 /* local.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		32BBE76E29033567005900E2 /* localTests */ = {
+		32BA4E48291430BB0013ABA4 /* localTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32BBE77C29033567005900E2 /* Build configuration list for PBXNativeTarget "localTests" */;
+			buildConfigurationList = 32BA4E56291430BB0013ABA4 /* Build configuration list for PBXNativeTarget "localTests" */;
 			buildPhases = (
-				32BBE76B29033567005900E2 /* Sources */,
-				32BBE76C29033567005900E2 /* Frameworks */,
-				32BBE76D29033567005900E2 /* Resources */,
+				32BA4E45291430BB0013ABA4 /* Sources */,
+				32BA4E46291430BB0013ABA4 /* Frameworks */,
+				32BA4E47291430BB0013ABA4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				32BBE77229033567005900E2 /* PBXTargetDependency */,
+				32BA4E4C291430BB0013ABA4 /* PBXTargetDependency */,
 			);
 			name = localTests;
 			productName = localTests;
-			productReference = 32BBE76F29033567005900E2 /* localTests.xctest */;
+			productReference = 32BA4E49291430BB0013ABA4 /* localTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		32BBE75E29033567005900E2 /* Project object */ = {
+		32BA4E38291430BB0013ABA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					32BBE76629033567005900E2 = {
-						CreatedOnToolsVersion = 14.0.1;
-						LastSwiftMigration = 1400;
+					32BA4E40291430BB0013ABA4 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
-					32BBE76E29033567005900E2 = {
-						CreatedOnToolsVersion = 14.0.1;
+					32BA4E48291430BB0013ABA4 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 32BBE76129033567005900E2 /* Build configuration list for PBXProject "local" */;
+			buildConfigurationList = 32BA4E3B291430BB0013ABA4 /* Build configuration list for PBXProject "local" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,30 +256,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 32BBE75D29033567005900E2;
+			mainGroup = 32BA4E37291430BB0013ABA4;
 			packageReferences = (
-				32BBE7AA2903376C005900E2 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				32BBE7AF2903378C005900E2 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				32BA4E88291432F70013ABA4 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
-			productRefGroup = 32BBE76829033567005900E2 /* Products */;
+			productRefGroup = 32BA4E42291430BB0013ABA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32BBE76629033567005900E2 /* local */,
-				32BBE76E29033567005900E2 /* localTests */,
+				32BA4E40291430BB0013ABA4 /* local */,
+				32BA4E48291430BB0013ABA4 /* localTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		32BBE76529033567005900E2 /* Resources */ = {
+		32BA4E3F291430BB0013ABA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32BBE76D29033567005900E2 /* Resources */ = {
+		32BA4E47291430BB0013ABA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,39 +289,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32BBE76329033567005900E2 /* Sources */ = {
+		32BA4E3D291430BB0013ABA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BBE7A3290336E0005900E2 /* AuthLocalDataSource.swift in Sources */,
-				32BBE79B290336C1005900E2 /* AuthLocalDataSourceProtocol.swift in Sources */,
-				32BBE7982903368F005900E2 /* LocalAssembly.swift in Sources */,
-				32BBE7A929033725005900E2 /* DatabaseProvider.swift in Sources */,
-				32BBE7A529033702005900E2 /* DataKey.swift in Sources */,
-				32BBE7A729033718005900E2 /* DatabaseProviderProtocol.swift in Sources */,
+				32BA4E72291431A30013ABA4 /* AuthLocalDataSource.swift in Sources */,
+				32BA4E6A2914316F0013ABA4 /* DatabaseProvider.swift in Sources */,
+				32BA4E64291430EA0013ABA4 /* LocalInject.swift in Sources */,
+				32BA4E692914316F0013ABA4 /* DatabaseProviderProtocol.swift in Sources */,
+				32BA4E71291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift in Sources */,
+				32BA4E6B2914316F0013ABA4 /* DataKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32BBE76B29033567005900E2 /* Sources */ = {
+		32BA4E45291430BB0013ABA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BBE77529033567005900E2 /* localTests.swift in Sources */,
+				32BA4E4F291430BB0013ABA4 /* localTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		32BBE77229033567005900E2 /* PBXTargetDependency */ = {
+		32BA4E4C291430BB0013ABA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 32BBE76629033567005900E2 /* local */;
-			targetProxy = 32BBE77129033567005900E2 /* PBXContainerItemProxy */;
+			target = 32BA4E40291430BB0013ABA4 /* local */;
+			targetProxy = 32BA4E4B291430BB0013ABA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		32BBE77729033567005900E2 /* Debug */ = {
+		32BA4E51291430BB0013ABA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,7 +384,7 @@
 			};
 			name = Debug;
 		};
-		32BBE77829033567005900E2 /* Release */ = {
+		32BA4E52291430BB0013ABA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -441,7 +441,7 @@
 			};
 			name = Release;
 		};
-		32BBE77A29033567005900E2 /* Debug */ = {
+		32BA4E54291430BB0013ABA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -455,7 +455,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +474,7 @@
 			};
 			name = Debug;
 		};
-		32BBE77B29033567005900E2 /* Release */ = {
+		32BA4E55291430BB0013ABA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -489,7 +488,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -508,7 +506,7 @@
 			};
 			name = Release;
 		};
-		32BBE77D29033567005900E2 /* Debug */ = {
+		32BA4E57291430BB0013ABA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -525,7 +523,7 @@
 			};
 			name = Debug;
 		};
-		32BBE77E29033567005900E2 /* Release */ = {
+		32BA4E58291430BB0013ABA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -545,29 +543,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32BBE76129033567005900E2 /* Build configuration list for PBXProject "local" */ = {
+		32BA4E3B291430BB0013ABA4 /* Build configuration list for PBXProject "local" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32BBE77729033567005900E2 /* Debug */,
-				32BBE77829033567005900E2 /* Release */,
+				32BA4E51291430BB0013ABA4 /* Debug */,
+				32BA4E52291430BB0013ABA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32BBE77929033567005900E2 /* Build configuration list for PBXNativeTarget "local" */ = {
+		32BA4E53291430BB0013ABA4 /* Build configuration list for PBXNativeTarget "local" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32BBE77A29033567005900E2 /* Debug */,
-				32BBE77B29033567005900E2 /* Release */,
+				32BA4E54291430BB0013ABA4 /* Debug */,
+				32BA4E55291430BB0013ABA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32BBE77C29033567005900E2 /* Build configuration list for PBXNativeTarget "localTests" */ = {
+		32BA4E56291430BB0013ABA4 /* Build configuration list for PBXNativeTarget "localTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32BBE77D29033567005900E2 /* Debug */,
-				32BBE77E29033567005900E2 /* Release */,
+				32BA4E57291430BB0013ABA4 /* Debug */,
+				32BA4E58291430BB0013ABA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -575,15 +573,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		32BBE7AA2903376C005900E2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.32.0;
+				minimumVersion = 10.32.2;
 			};
 		};
-		32BBE7AF2903378C005900E2 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		32BA4E88291432F70013ABA4 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
 			requirement = {
@@ -594,22 +592,22 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		32BBE7AB2903376C005900E2 /* Realm */ = {
+		32BA4E84291432BA0013ABA4 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 32BBE7AA2903376C005900E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		32BBE7AD2903376C005900E2 /* RealmSwift */ = {
+		32BA4E86291432BA0013ABA4 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 32BBE7AA2903376C005900E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
-		32BBE7B02903378C005900E2 /* KeychainAccess */ = {
+		32BA4E89291432F70013ABA4 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 32BBE7AF2903378C005900E2 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			package = 32BA4E88291432F70013ABA4 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 32BBE75E29033567005900E2 /* Project object */;
+	rootObject = 32BA4E38291430BB0013ABA4 /* Project object */;
 }
