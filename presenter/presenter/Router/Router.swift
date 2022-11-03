@@ -5,7 +5,6 @@
 //  Created by Rza Ismayilov on 22.10.22.
 //
 
-import Swinject
 import domain
 
 class Router: RouterProtocol {

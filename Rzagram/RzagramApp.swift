@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import Swinject
 import domain
 import data
 import local
