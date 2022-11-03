@@ -16,7 +16,6 @@
 		325488052904550F00BAF842 /* BasePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488042904550F00BAF842 /* BasePage.swift */; };
 		325488082904556000BAF842 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488072904556000BAF842 /* RouterProtocol.swift */; };
 		3254880A2904557F00BAF842 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488092904557F00BAF842 /* Router.swift */; };
-		3254880D290455F400BAF842 /* PresenterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254880C290455F400BAF842 /* PresenterAssembly.swift */; };
 		32548816290457CB00BAF842 /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548815290457CB00BAF842 /* AuthPage.swift */; };
 		325488192904587C00BAF842 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488182904587C00BAF842 /* AuthService.swift */; };
 		3254881B29045AC200BAF842 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3254881A29045AC200BAF842 /* domain.framework */; };
@@ -27,6 +26,7 @@
 		3261BEE42904903400F62459 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261BEE32904903400F62459 /* MainPage.swift */; };
 		3261BEE62904904000F62459 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261BEE52904904000F62459 /* MainService.swift */; };
 		3261BEEA29049E5300F62459 /* AuthTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261BEE929049E5300F62459 /* AuthTypeView.swift */; };
+		328454182914390F00014345 /* PresenterInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328454172914390F00014345 /* PresenterInject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		325488042904550F00BAF842 /* BasePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePage.swift; sourceTree = "<group>"; };
 		325488072904556000BAF842 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		325488092904557F00BAF842 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		3254880C290455F400BAF842 /* PresenterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterAssembly.swift; sourceTree = "<group>"; };
 		32548815290457CB00BAF842 /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
 		325488182904587C00BAF842 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3254881A29045AC200BAF842 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +73,7 @@
 		3261BEE32904903400F62459 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		3261BEE52904904000F62459 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
 		3261BEE929049E5300F62459 /* AuthTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeView.swift; sourceTree = "<group>"; };
+		328454172914390F00014345 /* PresenterInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				325488322904769000BAF842 /* Tools */,
-				3254880B290455EA00BAF842 /* DI */,
+				3254880B290455EA00BAF842 /* Inject */,
 				325488062904554900BAF842 /* Router */,
 				32548801290454A100BAF842 /* Base */,
 				325488112904579E00BAF842 /* Pages */,
@@ -165,12 +165,12 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		3254880B290455EA00BAF842 /* DI */ = {
+		3254880B290455EA00BAF842 /* Inject */ = {
 			isa = PBXGroup;
 			children = (
-				3254880C290455F400BAF842 /* PresenterAssembly.swift */,
+				328454172914390F00014345 /* PresenterInject.swift */,
 			);
-			path = DI;
+			path = Inject;
 			sourceTree = "<group>";
 		};
 		325488112904579E00BAF842 /* Pages */ = {
@@ -348,10 +348,10 @@
 				3254882429046CF800BAF842 /* PrimaryButton.swift in Sources */,
 				3261BEE62904904000F62459 /* MainService.swift in Sources */,
 				32548816290457CB00BAF842 /* AuthPage.swift in Sources */,
-				3254880D290455F400BAF842 /* PresenterAssembly.swift in Sources */,
 				3261BEE42904903400F62459 /* MainPage.swift in Sources */,
 				3254880A2904557F00BAF842 /* Router.swift in Sources */,
 				3261BEEA29049E5300F62459 /* AuthTypeView.swift in Sources */,
+				328454182914390F00014345 /* PresenterInject.swift in Sources */,
 				32548834290476AD00BAF842 /* DuoColor.swift in Sources */,
 				325488082904556000BAF842 /* RouterProtocol.swift in Sources */,
 				32548803290454AC00BAF842 /* BaseService.swift in Sources */,

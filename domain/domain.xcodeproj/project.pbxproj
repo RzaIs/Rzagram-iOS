@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322C35F22914279200D05C78 /* BaseInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C35F12914279200D05C78 /* BaseInject.swift */; };
 		324F09CB28F0D2CB00AE6009 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09C228F0D2CB00AE6009 /* domain.framework */; };
 		324F09D028F0D2CB00AE6009 /* domainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F09CF28F0D2CB00AE6009 /* domainTests.swift */; };
 		324F09D128F0D2CB00AE6009 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 324F09C528F0D2CB00AE6009 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,12 +15,12 @@
 		325487CA2904517100BAF842 /* BaseAsyncThrowsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325487C92904517100BAF842 /* BaseAsyncThrowsUseCase.swift */; };
 		325487CC2904527400BAF842 /* BaseObserveUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325487CB2904527400BAF842 /* BaseObserveUseCase.swift */; };
 		325487CE290452BD00BAF842 /* AuthRegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325487CD290452BD00BAF842 /* AuthRegisterUseCase.swift */; };
-		325488102904560C00BAF842 /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254880F2904560C00BAF842 /* DomainAssembly.swift */; };
 		3254883629047E9F00BAF842 /* BaseThrowsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254883529047E9F00BAF842 /* BaseThrowsUseCase.swift */; };
 		3254883829047EBC00BAF842 /* AuthLogoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254883729047EBB00BAF842 /* AuthLogoutUseCase.swift */; };
 		3254883A2904832500BAF842 /* AuthObserveLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488392904832500BAF842 /* AuthObserveLoginState.swift */; };
 		3254883C2904856D00BAF842 /* AuthGetLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254883B2904856D00BAF842 /* AuthGetLoginState.swift */; };
 		3254883E2904857E00BAF842 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254883D2904857E00BAF842 /* BaseUseCase.swift */; };
+		32845416291437A200014345 /* DomainInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32845415291437A200014345 /* DomainInject.swift */; };
 		328827AA28F1E8EB00F80F65 /* AuthLoginInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827A928F1E8EB00F80F65 /* AuthLoginInput.swift */; };
 		328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */; };
 		328827AE28F1E9CA00F80F65 /* AuthRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		322C35F12914279200D05C78 /* BaseInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInject.swift; sourceTree = "<group>"; };
 		324F09C228F0D2CB00AE6009 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		324F09C528F0D2CB00AE6009 /* domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domain.h; sourceTree = "<group>"; };
 		324F09CA28F0D2CB00AE6009 /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,12 +63,12 @@
 		325487C92904517100BAF842 /* BaseAsyncThrowsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAsyncThrowsUseCase.swift; sourceTree = "<group>"; };
 		325487CB2904527400BAF842 /* BaseObserveUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObserveUseCase.swift; sourceTree = "<group>"; };
 		325487CD290452BD00BAF842 /* AuthRegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterUseCase.swift; sourceTree = "<group>"; };
-		3254880F2904560C00BAF842 /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
 		3254883529047E9F00BAF842 /* BaseThrowsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseThrowsUseCase.swift; sourceTree = "<group>"; };
 		3254883729047EBB00BAF842 /* AuthLogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLogoutUseCase.swift; sourceTree = "<group>"; };
 		325488392904832500BAF842 /* AuthObserveLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthObserveLoginState.swift; sourceTree = "<group>"; };
 		3254883B2904856D00BAF842 /* AuthGetLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGetLoginState.swift; sourceTree = "<group>"; };
 		3254883D2904857E00BAF842 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		32845415291437A200014345 /* DomainInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainInject.swift; sourceTree = "<group>"; };
 		328827A928F1E8EB00F80F65 /* AuthLoginInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginInput.swift; sourceTree = "<group>"; };
 		328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterInput.swift; sourceTree = "<group>"; };
 		328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoProtocol.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		324F09C428F0D2CB00AE6009 /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				3254880E290455FD00BAF842 /* DI */,
+				3254880E290455FD00BAF842 /* Inject */,
 				328827B228F1EBB800F80F65 /* Tools */,
 				328827A828F1E8DE00F80F65 /* UseCases */,
 				328827A528F1E8C600F80F65 /* Models */,
@@ -157,12 +159,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		3254880E290455FD00BAF842 /* DI */ = {
+		3254880E290455FD00BAF842 /* Inject */ = {
 			isa = PBXGroup;
 			children = (
-				3254880F2904560C00BAF842 /* DomainAssembly.swift */,
+				32845415291437A200014345 /* DomainInject.swift */,
+				322C35F12914279200D05C78 /* BaseInject.swift */,
 			);
-			path = DI;
+			path = Inject;
 			sourceTree = "<group>";
 		};
 		328827A428F1E8BD00F80F65 /* RepositoryProtocols */ = {
@@ -339,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				325487C62904514D00BAF842 /* AuthLoginUseCase.swift in Sources */,
-				325488102904560C00BAF842 /* DomainAssembly.swift in Sources */,
+				32845416291437A200014345 /* DomainInject.swift in Sources */,
 				328827B428F1EBBE00F80F65 /* UIError.swift in Sources */,
 				3254883629047E9F00BAF842 /* BaseThrowsUseCase.swift in Sources */,
 				3254883A2904832500BAF842 /* AuthObserveLoginState.swift in Sources */,
@@ -351,6 +354,7 @@
 				328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */,
 				3254883C2904856D00BAF842 /* AuthGetLoginState.swift in Sources */,
 				3254883E2904857E00BAF842 /* BaseUseCase.swift in Sources */,
+				322C35F22914279200D05C78 /* BaseInject.swift in Sources */,
 				3254883829047EBC00BAF842 /* AuthLogoutUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

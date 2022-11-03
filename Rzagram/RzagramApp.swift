@@ -16,19 +16,21 @@ import presenter
 
 @main
 struct RzagramApp: App {
-    private let appAssembler: Assembler = .init([
-        PresenterAssembly(),
-        DomainAssembly(),
-        DataAssembly(),
-        RemoteAssembly(baseURL: "http://172.20.10.4:3000"),
-        LocalAssembly(keychainService: "is.rza.Rzagram")
-    ])
+    
+    static let dataInject: DataInject = .init(
+        baseURL: "http://172.20.10.4:3000",
+        keychainService: "is.rza.Rzagram"
+    )
+    static let domainInject: DomainInject = .init(
+        dependency: RzagramApp.dataInject
+    )
+    static let presenterInject: PresenterInject = .init(
+        domainInject: RzagramApp.domainInject
+    )
     
     var body: some Scene {
         WindowGroup {
-            self.appAssembler
-                .resolver
-                .resolve(MainPage.self)!
+            RzagramApp.presenterInject.mainPage
         }
     }
 }

@@ -2,7 +2,7 @@
 //  remote.h
 //  remote
 //
-//  Created by Rza Ismayilov on 21.10.22.
+//  Created by Rza Ismayilov on 03.11.22.
 //
 
 #import <Foundation/Foundation.h>
