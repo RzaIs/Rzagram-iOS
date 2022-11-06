@@ -17,15 +17,3 @@ public class AuthLogoutUseCase: BaseThrowsUseCase<Void, Void> {
     }
 }
 
-#if DEBUG
-
-public class AuthLogoutUseCaseMock: BaseThrowsUseCase<Void, Void> {
-    
-    public override init() {}
-    
-    public override func execute(input: Void) throws -> Void {
-        print("Logout")
-    }
-}
-
-#endif

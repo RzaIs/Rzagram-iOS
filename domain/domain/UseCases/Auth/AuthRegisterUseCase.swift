@@ -16,16 +16,3 @@ public class AuthRegisterUseCase: BaseAsyncThrowsUseCase<AuthRegisterInput, Void
         try await self.repo.register(credentials: input)
     }
 }
-
-#if DEBUG
-
-public class AuthRegisterUseCaseMock: BaseAsyncThrowsUseCase<AuthRegisterInput, Void> {
-    
-    public override init() {}
-    
-    public override func execute(input: AuthRegisterInput) async throws -> Void {
-        print("Register")
-    }
-}
-
-#endif
