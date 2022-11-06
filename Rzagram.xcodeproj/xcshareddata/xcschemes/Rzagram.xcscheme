@@ -28,6 +28,56 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "324F097B28F0C46000AE6009"
+               BuildableName = "dataTests.xctest"
+               BlueprintName = "dataTests"
+               ReferencedContainer = "container:data/data.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "324F09C928F0D2CB00AE6009"
+               BuildableName = "domainTests.xctest"
+               BlueprintName = "domainTests"
+               ReferencedContainer = "container:domain/domain.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "32BA4E48291430BB0013ABA4"
+               BuildableName = "localTests.xctest"
+               BlueprintName = "localTests"
+               ReferencedContainer = "container:local/local.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "325487E02904533F00BAF842"
+               BuildableName = "presenterTests.xctest"
+               BlueprintName = "presenterTests"
+               ReferencedContainer = "container:presenter/presenter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "32BA4DF329142FC80013ABA4"
+               BuildableName = "remoteTests.xctest"
+               BlueprintName = "remoteTests"
+               ReferencedContainer = "container:remote/remote.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
