@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322C35F22914279200D05C78 /* BaseInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C35F12914279200D05C78 /* BaseInject.swift */; };
 		324F09CB28F0D2CB00AE6009 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09C228F0D2CB00AE6009 /* domain.framework */; };
 		324F09D028F0D2CB00AE6009 /* domainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F09CF28F0D2CB00AE6009 /* domainTests.swift */; };
 		324F09D128F0D2CB00AE6009 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 324F09C528F0D2CB00AE6009 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +24,7 @@
 		328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */; };
 		328827AE28F1E9CA00F80F65 /* AuthRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */; };
 		328827B428F1EBBE00F80F65 /* UIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827B328F1EBBE00F80F65 /* UIError.swift */; };
+		329F215F291814B90084EE67 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 329F215E291814B90084EE67 /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		322C35F12914279200D05C78 /* BaseInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInject.swift; sourceTree = "<group>"; };
 		324F09C228F0D2CB00AE6009 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		324F09C528F0D2CB00AE6009 /* domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domain.h; sourceTree = "<group>"; };
 		324F09CA28F0D2CB00AE6009 /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329F215F291814B90084EE67 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				32845415291437A200014345 /* DomainInject.swift */,
-				322C35F12914279200D05C78 /* BaseInject.swift */,
 			);
 			path = Inject;
 			sourceTree = "<group>";
@@ -238,6 +237,7 @@
 			);
 			name = domain;
 			packageProductDependencies = (
+				329F215E291814B90084EE67 /* Inject */,
 			);
 			productName = domain;
 			productReference = 324F09C228F0D2CB00AE6009 /* domain.framework */;
@@ -290,6 +290,7 @@
 			);
 			mainGroup = 324F09B828F0D2CB00AE6009;
 			packageReferences = (
+				329F215D291814B90084EE67 /* XCRemoteSwiftPackageReference "Inject" */,
 			);
 			productRefGroup = 324F09C328F0D2CB00AE6009 /* Products */;
 			projectDirPath = "";
@@ -336,7 +337,6 @@
 				328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */,
 				3254883C2904856D00BAF842 /* AuthGetLoginState.swift in Sources */,
 				3254883E2904857E00BAF842 /* BaseUseCase.swift in Sources */,
-				322C35F22914279200D05C78 /* BaseInject.swift in Sources */,
 				3254883829047EBC00BAF842 /* AuthLogoutUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		329F215D291814B90084EE67 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RzaIs/Inject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		329F215E291814B90084EE67 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329F215D291814B90084EE67 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 324F09B928F0D2CB00AE6009 /* Project object */;
 }

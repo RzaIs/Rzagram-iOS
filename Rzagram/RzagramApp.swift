@@ -5,6 +5,7 @@
 //  Created by Rza Ismayilov on 07.10.22.
 //
 
+import Inject
 import SwiftUI
 import Combine
 import domain

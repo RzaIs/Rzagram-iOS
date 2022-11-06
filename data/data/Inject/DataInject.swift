@@ -5,11 +5,12 @@
 //  Created by Rza Ismayilov on 03.11.22.
 //
 
+import Inject
 import domain
 import remote
 import local
 
-public class DataInject: BaseInject<EmptyDependency>, DomainDependency {
+public class DataInject: Inject<EmptyDependency>, DomainDependency {
     
     private let baseURL: String
     private let keychainService: String

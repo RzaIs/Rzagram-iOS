@@ -5,11 +5,13 @@
 //  Created by Rza Ismayilov on 03.11.22.
 //
 
+import Inject
+
 public protocol DomainDependency {
     var authRepo: AuthRepoProtocol { get }
 }
 
-public class DomainInject: BaseInject<DomainDependency> {
+public class DomainInject: Inject<DomainDependency> {
     
     public var authLoginUseCase: AuthLoginUseCase {
         AuthLoginUseCase(repo: self.dependency.authRepo)

@@ -5,6 +5,7 @@
 //  Created by Rza Ismayilov on 03.11.22.
 //
 
+import Inject
 import domain
 
 public protocol RemoteDependency {
@@ -14,7 +15,7 @@ public protocol RemoteDependency {
     var setRefreshToken: (String) throws -> Void { get }
 }
 
-public class RemoteInject: BaseInject<RemoteDependency> {
+public class RemoteInject: Inject<RemoteDependency> {
     
     private let baseURL: String
 

@@ -5,12 +5,13 @@
 //  Created by Rza Ismayilov on 03.11.22.
 //
 
-import domain
+import Inject
 import Realm
 import RealmSwift
 import KeychainAccess
+import domain
 
-public class LocalInject: BaseInject<EmptyDependency> {
+public class LocalInject: Inject<EmptyDependency> {
     
     private let keychainService: String
     

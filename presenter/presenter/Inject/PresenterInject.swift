@@ -5,9 +5,10 @@
 //  Created by Rza Ismayilov on 03.11.22.
 //
 
+import Inject
 import domain
 
-public class PresenterInject: BaseInject<DomainInject> {
+public class PresenterInject: Inject<DomainInject> {
         
     var router: RouterProtocol {
         Router(inject: self)
