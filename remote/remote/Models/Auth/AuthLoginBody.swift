@@ -9,6 +9,7 @@ public struct AuthLoginBody: Encodable, Equatable {
     let username: String
     let encryptedPassword: String
     let keyID: String
+    
     public init(
         username: String,
         encryptedPassword: String,

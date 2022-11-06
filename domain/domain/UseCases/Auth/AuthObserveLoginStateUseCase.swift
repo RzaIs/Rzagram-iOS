@@ -7,7 +7,7 @@
 
 import Combine
 
-public class AuthObserveLoginState: BaseObserveUseCase<Void, Bool> {
+public class AuthObserveLoginStateUseCase: BaseObserveUseCase<Void, Bool> {
     private let repo: AuthRepoProtocol
     
     init(repo: AuthRepoProtocol) {
@@ -21,7 +21,7 @@ public class AuthObserveLoginState: BaseObserveUseCase<Void, Bool> {
 
 #if DEBUG
 
-public class AuthObserveLoginStateMock: BaseObserveUseCase<Void, Bool> {
+public class AuthObserveLoginStateUseCaseMock: BaseObserveUseCase<Void, Bool> {
     
     private let value: Bool
     

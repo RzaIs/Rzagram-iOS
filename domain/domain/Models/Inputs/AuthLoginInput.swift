@@ -5,7 +5,7 @@
 //  Created by Rza Ismayilov on 08.10.22.
 //
 
-public struct AuthLoginInput {
+public struct AuthLoginInput: Equatable {
     public let username: String
     public let password: String
     
