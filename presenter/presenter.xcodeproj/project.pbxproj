@@ -16,8 +16,6 @@
 		3254880A2904557F00BAF842 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488092904557F00BAF842 /* Router.swift */; };
 		32548816290457CB00BAF842 /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548815290457CB00BAF842 /* AuthPage.swift */; };
 		325488192904587C00BAF842 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488182904587C00BAF842 /* AuthService.swift */; };
-		3254881B29045AC200BAF842 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3254881A29045AC200BAF842 /* domain.framework */; };
-		3254881C29045AC200BAF842 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3254881A29045AC200BAF842 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32548821290465A900BAF842 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548820290465A900BAF842 /* InputView.swift */; };
 		3254882429046CF800BAF842 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254882329046CF800BAF842 /* PrimaryButton.swift */; };
 		32548834290476AD00BAF842 /* DuoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548833290476AD00BAF842 /* DuoColor.swift */; };
@@ -25,6 +23,8 @@
 		3261BEE62904904000F62459 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261BEE52904904000F62459 /* MainService.swift */; };
 		3261BEEA29049E5300F62459 /* AuthTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261BEE929049E5300F62459 /* AuthTypeView.swift */; };
 		328454182914390F00014345 /* PresenterInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328454172914390F00014345 /* PresenterInject.swift */; };
+		329F217029182B900084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F216F29182B900084EE67 /* domain.framework */; };
+		329F217129182B900084EE67 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F216F29182B900084EE67 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3254881C29045AC200BAF842 /* domain.framework in Embed Frameworks */,
+				329F217129182B900084EE67 /* domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,14 +56,12 @@
 		325487DC2904533F00BAF842 /* presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presenter.h; sourceTree = "<group>"; };
 		325487E12904533F00BAF842 /* presenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = presenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		325487E62904533F00BAF842 /* presenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presenterTests.swift; sourceTree = "<group>"; };
-		325487FD2904535E00BAF842 /* global.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = global.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32548802290454AC00BAF842 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		325488042904550F00BAF842 /* BasePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePage.swift; sourceTree = "<group>"; };
 		325488072904556000BAF842 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		325488092904557F00BAF842 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		32548815290457CB00BAF842 /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
 		325488182904587C00BAF842 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		3254881A29045AC200BAF842 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32548820290465A900BAF842 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		3254882329046CF800BAF842 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		32548833290476AD00BAF842 /* DuoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoColor.swift; sourceTree = "<group>"; };
@@ -71,6 +69,7 @@
 		3261BEE52904904000F62459 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
 		3261BEE929049E5300F62459 /* AuthTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeView.swift; sourceTree = "<group>"; };
 		328454172914390F00014345 /* PresenterInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInject.swift; sourceTree = "<group>"; };
+		329F216F29182B900084EE67 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3254881B29045AC200BAF842 /* domain.framework in Frameworks */,
+				329F217029182B900084EE67 /* domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +136,7 @@
 		325487FC2904535E00BAF842 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3254881A29045AC200BAF842 /* domain.framework */,
-				325487FD2904535E00BAF842 /* global.framework */,
+				329F216F29182B900084EE67 /* domain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

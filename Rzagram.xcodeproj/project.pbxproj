@@ -12,14 +12,10 @@
 		324F091E28F0B28F00AE6009 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324F091D28F0B28F00AE6009 /* Preview Assets.xcassets */; };
 		324F09EB28F0D30D00AE6009 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F099228F0C46100AE6009 /* data.framework */; };
 		324F09EC28F0D30D00AE6009 /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324F099228F0C46100AE6009 /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		324F09ED28F0D30D00AE6009 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E028F0D2CC00AE6009 /* domain.framework */; };
-		324F09EE28F0D30D00AE6009 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E028F0D2CC00AE6009 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		325487BB290442B800BAF842 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487B9290442B800BAF842 /* local.framework */; };
-		325487BC290442B800BAF842 /* local.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487B9290442B800BAF842 /* local.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		325487BD290442B800BAF842 /* remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487BA290442B800BAF842 /* remote.framework */; };
-		325487BE290442B800BAF842 /* remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487BA290442B800BAF842 /* remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		325487FA2904535500BAF842 /* presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487F72904534000BAF842 /* presenter.framework */; };
 		325487FB2904535500BAF842 /* presenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487F72904534000BAF842 /* presenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329F217E29182BDE0084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E028F0D2CC00AE6009 /* domain.framework */; };
+		329F217F29182BDE0084EE67 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E028F0D2CC00AE6009 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,11 +98,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				324F09EE28F0D30D00AE6009 /* domain.framework in Embed Frameworks */,
 				324F09EC28F0D30D00AE6009 /* data.framework in Embed Frameworks */,
-				325487BC290442B800BAF842 /* local.framework in Embed Frameworks */,
+				329F217F29182BDE0084EE67 /* domain.framework in Embed Frameworks */,
 				325487FB2904535500BAF842 /* presenter.framework in Embed Frameworks */,
-				325487BE290442B800BAF842 /* remote.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,8 +116,6 @@
 		324F092428F0B31A00AE6009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		324F098C28F0C46000AE6009 /* data.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = data.xcodeproj; path = data/data.xcodeproj; sourceTree = "<group>"; };
 		324F09DA28F0D2CB00AE6009 /* domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = domain.xcodeproj; path = domain/domain.xcodeproj; sourceTree = "<group>"; };
-		325487B9290442B800BAF842 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		325487BA290442B800BAF842 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		325487F12904533F00BAF842 /* presenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = presenter.xcodeproj; path = presenter/presenter.xcodeproj; sourceTree = "<group>"; };
 		32BA4E0429142FC80013ABA4 /* remote.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = remote.xcodeproj; path = remote/remote.xcodeproj; sourceTree = "<group>"; };
 		32BA4E59291430BB0013ABA4 /* local.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = local.xcodeproj; path = local/local.xcodeproj; sourceTree = "<group>"; };
@@ -134,11 +126,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324F09ED28F0D30D00AE6009 /* domain.framework in Frameworks */,
 				324F09EB28F0D30D00AE6009 /* data.framework in Frameworks */,
-				325487BB290442B800BAF842 /* local.framework in Frameworks */,
+				329F217E29182BDE0084EE67 /* domain.framework in Frameworks */,
 				325487FA2904535500BAF842 /* presenter.framework in Frameworks */,
-				325487BD290442B800BAF842 /* remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +145,6 @@
 				324F098C28F0C46000AE6009 /* data.xcodeproj */,
 				324F091528F0B28E00AE6009 /* Rzagram */,
 				324F091428F0B28E00AE6009 /* Products */,
-				324F092B28F0C10100AE6009 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,15 +174,6 @@
 				324F091D28F0B28F00AE6009 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		324F092B28F0C10100AE6009 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				325487B9290442B800BAF842 /* local.framework */,
-				325487BA290442B800BAF842 /* remote.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		324F098D28F0C46000AE6009 /* Products */ = {

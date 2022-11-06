@@ -8,7 +8,7 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=RzaIs_Rzagram-iOS&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=RzaIs_Rzagram-iOS)
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=RzaIs_Rzagram-iOS&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=RzaIs_Rzagram-iOS)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=RzaIs_Rzagram-iOS&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=RzaIs_Rzagram-iOS)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=RzaIs_Rzagram-iOS&metric=coverage)](https://sonarcloud.io/summary/new_code?id=RzaIs_Rzagram-iOS)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=RzaIs_Rzagram-iOS&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=RzaIs_Rzagram-iOS)
 
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=RzaIs_Rzagram-iOS&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=RzaIs_Rzagram-iOS)
