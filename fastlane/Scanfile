@@ -1,4 +1,4 @@
-project("TheNewsForYou.xcodeproj")
+project("Rzagram.xcodeproj")
 device("iPhone 11")
 
 clean(true)
