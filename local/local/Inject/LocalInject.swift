@@ -5,18 +5,19 @@
 //  Created by Rza Ismayilov on 03.11.22.
 //
 
-import domain
+import Inject
 import Realm
 import RealmSwift
 import KeychainAccess
+import domain
 
-public class LocalInject: BaseInject<EmptyDependency> {
+public class LocalInject: Inject<EmptyDependency> {
     
     private let keychainService: String
     
     public init(keychainService: String) {
         self.keychainService = keychainService
-        super.init(dependency: EmptyDependency())
+        super.init()
     }
     
     lazy var realm: Realm = try! Realm(

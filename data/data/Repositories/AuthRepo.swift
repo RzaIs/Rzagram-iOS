@@ -14,16 +14,16 @@ class AuthRepo: AuthRepoProtocol {
     
     private let authRemoteDataSource: AuthRemoteDataSourceProtocol
     private let authLocalDataSource: AuthLocalDataSourceProtocol
-    private let rsaEncryptorProtocol: RSAEncryptorProtocol
+    private let rsaEncryptor: RSAEncryptorProtocol
     
     init(
         authRemoteDataSource: AuthRemoteDataSourceProtocol,
         authLocalDataSource: AuthLocalDataSourceProtocol,
-        rsaEncryptorProtocol: RSAEncryptorProtocol
+        rsaEncryptor: RSAEncryptorProtocol
     ) {
         self.authRemoteDataSource = authRemoteDataSource
         self.authLocalDataSource = authLocalDataSource
-        self.rsaEncryptorProtocol = rsaEncryptorProtocol
+        self.rsaEncryptor = rsaEncryptor
     }
     
     func login(credentials: AuthLoginInput) async throws {
@@ -31,7 +31,7 @@ class AuthRepo: AuthRepoProtocol {
         do {
             let publicKey = try await self.authRemoteDataSource.getPublicKey()
             step = 1
-            let credentials = try credentials.toRemote(publicKey: publicKey, self.rsaEncryptorProtocol)
+            let credentials = try credentials.toRemote(publicKey: publicKey, self.rsaEncryptor)
             step = 2
             let tokens = try await self.authRemoteDataSource.login(credentials: credentials)
             step = 3
@@ -50,7 +50,7 @@ class AuthRepo: AuthRepoProtocol {
         do {
             let publicKey = try await self.authRemoteDataSource.getPublicKey()
             step = 1
-            let credentials = try credentials.toRemote(publicKey: publicKey, self.rsaEncryptorProtocol)
+            let credentials = try credentials.toRemote(publicKey: publicKey, self.rsaEncryptor)
             step = 2
             let tokens = try await self.authRemoteDataSource.register(credentials: credentials)
             step = 3

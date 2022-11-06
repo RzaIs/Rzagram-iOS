@@ -10,8 +10,6 @@
 		325487E22904533F00BAF842 /* presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487D92904533F00BAF842 /* presenter.framework */; };
 		325487E72904533F00BAF842 /* presenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325487E62904533F00BAF842 /* presenterTests.swift */; };
 		325487E82904533F00BAF842 /* presenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 325487DC2904533F00BAF842 /* presenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		325487FE2904535E00BAF842 /* global.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325487FD2904535E00BAF842 /* global.framework */; };
-		325487FF2904535E00BAF842 /* global.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 325487FD2904535E00BAF842 /* global.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32548803290454AC00BAF842 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32548802290454AC00BAF842 /* BaseService.swift */; };
 		325488052904550F00BAF842 /* BasePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488042904550F00BAF842 /* BasePage.swift */; };
 		325488082904556000BAF842 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488072904556000BAF842 /* RouterProtocol.swift */; };
@@ -47,7 +45,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3254881C29045AC200BAF842 /* domain.framework in Embed Frameworks */,
-				325487FF2904535E00BAF842 /* global.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +79,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3254881B29045AC200BAF842 /* domain.framework in Frameworks */,
-				325487FE2904535E00BAF842 /* global.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

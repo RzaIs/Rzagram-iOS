@@ -5,6 +5,7 @@
 //  Created by Rza Ismayilov on 07.10.22.
 //
 
+import Inject
 import SwiftUI
 import Combine
 import domain
@@ -24,7 +25,7 @@ struct RzagramApp: App {
         dependency: RzagramApp.dataInject
     )
     static let presenterInject: PresenterInject = .init(
-        domainInject: RzagramApp.domainInject
+        dependency: RzagramApp.domainInject
     )
     
     var body: some Scene {
