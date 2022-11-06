@@ -16,8 +16,8 @@ public class PresenterInject: Inject<DomainInject> {
     
     var mainService: MainService {
         MainService(
-            authGetLoginState: self.dependency.authGetLoginState,
-            authObserveLoginState: self.dependency.authObserveLoginState,
+            authGetLoginStateUseCase: self.dependency.authGetLoginState,
+            authObserveLoginStateUseCase: self.dependency.authObserveLoginState,
             authLogoutUseCase: self.dependency.authLogoutUseCase
         )
     }

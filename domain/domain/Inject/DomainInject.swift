@@ -21,12 +21,12 @@ public class DomainInject: Inject<DomainDependency> {
         AuthRegisterUseCase(repo: self.dependency.authRepo)
     }
     
-    public var authObserveLoginState: AuthObserveLoginState {
-        AuthObserveLoginState(repo: self.dependency.authRepo)
+    public var authObserveLoginState: AuthObserveLoginStateUseCase {
+        AuthObserveLoginStateUseCase(repo: self.dependency.authRepo)
     }
     
-    public var authGetLoginState: AuthGetLoginState {
-        AuthGetLoginState(repo: self.dependency.authRepo)
+    public var authGetLoginState: AuthGetLoginStateUseCase {
+        AuthGetLoginStateUseCase(repo: self.dependency.authRepo)
     }
     
     public var authLogoutUseCase: AuthLogoutUseCase {

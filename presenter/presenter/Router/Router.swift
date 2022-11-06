@@ -35,8 +35,8 @@ class RouterMock: RouterProtocol {
         MainPage(
             router: RouterMock.router,
             service: MainService(
-                authGetLoginState: AuthGetLoginStateMock(value: authGetLoginStateValue),
-                authObserveLoginState: AuthObserveLoginStateMock(value: authObserveLoginStateValue),
+                authGetLoginStateUseCase: AuthGetLoginStateUseCaseMock(value: authGetLoginStateValue),
+                authObserveLoginStateUseCase: AuthObserveLoginStateUseCaseMock(value: authObserveLoginStateValue),
                 authLogoutUseCase: AuthLogoutUseCaseMock()
             )
         )

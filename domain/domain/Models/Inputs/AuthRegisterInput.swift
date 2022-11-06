@@ -5,7 +5,7 @@
 //  Created by Rza Ismayilov on 08.10.22.
 //
 
-public struct AuthRegisterInput {
+public struct AuthRegisterInput: Equatable {
     public let email: String
     public let username: String
     public let password: String

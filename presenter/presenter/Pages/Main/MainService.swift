@@ -10,19 +10,18 @@ import domain
 class MainService: BaseService {
     @Published var loginState: Bool
     
-    //
     private let authLogoutUseCase: BaseThrowsUseCase<Void, Void>
     
     init(
-        authGetLoginState: BaseUseCase<Void, Bool>,
-        authObserveLoginState: BaseObserveUseCase<Void, Bool>,
+        authGetLoginStateUseCase: BaseUseCase<Void, Bool>,
+        authObserveLoginStateUseCase: BaseObserveUseCase<Void, Bool>,
         authLogoutUseCase: BaseThrowsUseCase<Void, Void>
     ) {
-        self.loginState = authGetLoginState.execute(input: Void())
+        self.loginState = authGetLoginStateUseCase.execute(input: Void())
         self.authLogoutUseCase = authLogoutUseCase
         super.init()
         
-        authObserveLoginState.observe(input: Void())
+        authObserveLoginStateUseCase.observe(input: Void())
             .receive(on: DispatchQueue.main)
             .assign(to: &self.$loginState)
     }

@@ -5,7 +5,7 @@
 //  Created by Rza Ismayilov on 23.10.22.
 //
 
-public class AuthGetLoginState: BaseUseCase<Void, Bool> {
+public class AuthGetLoginStateUseCase: BaseUseCase<Void, Bool> {
     private let repo: AuthRepoProtocol
     
     init(repo: AuthRepoProtocol) {
@@ -19,7 +19,7 @@ public class AuthGetLoginState: BaseUseCase<Void, Bool> {
 
 #if DEBUG
 
-public class AuthGetLoginStateMock: BaseUseCase<Void, Bool> {
+public class AuthGetLoginStateUseCaseMock: BaseUseCase<Void, Bool> {
     
     private let value: Bool
     
