@@ -26,7 +26,46 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "324F09C128F0D2CB00AE6009"
+            BuildableName = "domain.framework"
+            BlueprintName = "domain"
+            ReferencedContainer = "container:domain/domain.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "324F097328F0C46000AE6009"
+            BuildableName = "data.framework"
+            BlueprintName = "data"
+            ReferencedContainer = "container:data/data.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "32BA4DEB29142FC80013ABA4"
+            BuildableName = "remote.framework"
+            BlueprintName = "remote"
+            ReferencedContainer = "container:remote/remote.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "32BA4E40291430BB0013ABA4"
+            BuildableName = "local.framework"
+            BlueprintName = "local"
+            ReferencedContainer = "container:local/local.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "325487D82904533F00BAF842"
+            BuildableName = "presenter.framework"
+            BlueprintName = "presenter"
+            ReferencedContainer = "container:presenter/presenter.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
