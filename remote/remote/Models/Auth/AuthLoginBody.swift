@@ -5,7 +5,7 @@
 //  Created by Rza Ismayilov on 21.10.22.
 //
 
-public struct AuthLoginBody: Encodable {
+public struct AuthLoginBody: Encodable, Equatable {
     let username: String
     let encryptedPassword: String
     let keyID: String
