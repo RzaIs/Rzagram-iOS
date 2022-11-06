@@ -70,6 +70,9 @@ fastlane/test_output
 ## Other
 **/.DS_Store
 
+## CI / CD
+Gemfile.lock
+
 ### Xcode Patch ###
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj

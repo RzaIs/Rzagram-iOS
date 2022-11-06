@@ -1,0 +1,8 @@
+project("Rzagram.xcodeproj")
+device("iPhone 11")
+
+clean(true)
+
+skip_build(false)
+
+code_coverage(true)
