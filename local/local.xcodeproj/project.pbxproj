@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329F21472917FDD20084EE67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 329F21462917FDD20084EE67 /* Realm */; };
+		329F21492917FDD20084EE67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 329F21482917FDD20084EE67 /* RealmSwift */; };
 		32BA4E4A291430BB0013ABA4 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E41291430BB0013ABA4 /* local.framework */; };
 		32BA4E4F291430BB0013ABA4 /* localTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E4E291430BB0013ABA4 /* localTests.swift */; };
 		32BA4E50291430BB0013ABA4 /* local.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BA4E44291430BB0013ABA4 /* local.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,8 +20,6 @@
 		32BA4E72291431A30013ABA4 /* AuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E70291431A30013ABA4 /* AuthLocalDataSource.swift */; };
 		32BA4E75291431C30013ABA4 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E74291431C30013ABA4 /* domain.framework */; };
 		32BA4E76291431C30013ABA4 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E74291431C30013ABA4 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		32BA4E85291432BA0013ABA4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E84291432BA0013ABA4 /* Realm */; };
-		32BA4E87291432BA0013ABA4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E86291432BA0013ABA4 /* RealmSwift */; };
 		32BA4E8A291432F70013ABA4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E89291432F70013ABA4 /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
@@ -66,9 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329F21492917FDD20084EE67 /* RealmSwift in Frameworks */,
+				329F21472917FDD20084EE67 /* Realm in Frameworks */,
 				32BA4E8A291432F70013ABA4 /* KeychainAccess in Frameworks */,
-				32BA4E87291432BA0013ABA4 /* RealmSwift in Frameworks */,
-				32BA4E85291432BA0013ABA4 /* Realm in Frameworks */,
 				32BA4E75291431C30013ABA4 /* domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,9 +203,9 @@
 			);
 			name = local;
 			packageProductDependencies = (
-				32BA4E84291432BA0013ABA4 /* Realm */,
-				32BA4E86291432BA0013ABA4 /* RealmSwift */,
 				32BA4E89291432F70013ABA4 /* KeychainAccess */,
+				329F21462917FDD20084EE67 /* Realm */,
+				329F21482917FDD20084EE67 /* RealmSwift */,
 			);
 			productName = local;
 			productReference = 32BA4E41291430BB0013ABA4 /* local.framework */;
@@ -258,8 +258,8 @@
 			);
 			mainGroup = 32BA4E37291430BB0013ABA4;
 			packageReferences = (
-				32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				32BA4E88291432F70013ABA4 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				329F21452917FDD20084EE67 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 32BA4E42291430BB0013ABA4 /* Products */;
 			projectDirPath = "";
@@ -573,12 +573,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		329F21452917FDD20084EE67 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.32.2;
+				minimumVersion = 10.32.1;
 			};
 		};
 		32BA4E88291432F70013ABA4 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
@@ -592,14 +592,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		32BA4E84291432BA0013ABA4 /* Realm */ = {
+		329F21462917FDD20084EE67 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 329F21452917FDD20084EE67 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		32BA4E86291432BA0013ABA4 /* RealmSwift */ = {
+		329F21482917FDD20084EE67 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 32BA4E83291432BA0013ABA4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 329F21452917FDD20084EE67 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 		32BA4E89291432F70013ABA4 /* KeychainAccess */ = {

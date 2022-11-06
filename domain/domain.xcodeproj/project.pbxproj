@@ -25,8 +25,6 @@
 		328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */; };
 		328827AE28F1E9CA00F80F65 /* AuthRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */; };
 		328827B428F1EBBE00F80F65 /* UIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827B328F1EBBE00F80F65 /* UIError.swift */; };
-		32BBE7582903350E005900E2 /* global.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE7572903350E005900E2 /* global.framework */; };
-		32BBE7592903350E005900E2 /* global.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BBE7572903350E005900E2 /* global.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,20 +36,6 @@
 			remoteInfo = domain;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		32BBE75A2903350E005900E2 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				32BBE7592903350E005900E2 /* global.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		322C35F12914279200D05C78 /* BaseInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInject.swift; sourceTree = "<group>"; };
@@ -81,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BBE7582903350E005900E2 /* global.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +231,6 @@
 				324F09BE28F0D2CB00AE6009 /* Sources */,
 				324F09BF28F0D2CB00AE6009 /* Frameworks */,
 				324F09C028F0D2CB00AE6009 /* Resources */,
-				32BBE75A2903350E005900E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

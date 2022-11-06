@@ -12,14 +12,14 @@
 		324F097D28F0C46000AE6009 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F097428F0C46000AE6009 /* data.framework */; };
 		324F098228F0C46000AE6009 /* dataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F098128F0C46000AE6009 /* dataTests.swift */; };
 		324F098328F0C46000AE6009 /* data.h in Headers */ = {isa = PBXBuildFile; fileRef = 324F097728F0C46000AE6009 /* data.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		324F09E828F0D2FE00AE6009 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E728F0D2FE00AE6009 /* domain.framework */; };
-		324F09E928F0D2FE00AE6009 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324F09E728F0D2FE00AE6009 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		328827B028F1EA3800F80F65 /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AF28F1EA3800F80F65 /* AuthRepo.swift */; };
 		328827B628F1ECC400F80F65 /* Domain2Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827B528F1ECC400F80F65 /* Domain2Remote.swift */; };
-		32BA4E7E2914324D0013ABA4 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E7D2914324D0013ABA4 /* local.framework */; };
-		32BA4E7F2914324D0013ABA4 /* local.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E7D2914324D0013ABA4 /* local.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		32BA4E81291432500013ABA4 /* remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E80291432500013ABA4 /* remote.framework */; };
-		32BA4E82291432500013ABA4 /* remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E80291432500013ABA4 /* remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329F213E2917F98E0084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F213B2917F98E0084EE67 /* domain.framework */; };
+		329F213F2917F98E0084EE67 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F213B2917F98E0084EE67 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329F21402917F98E0084EE67 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F213C2917F98E0084EE67 /* local.framework */; };
+		329F21412917F98E0084EE67 /* local.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F213C2917F98E0084EE67 /* local.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329F21422917F98E0084EE67 /* remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F213D2917F98E0084EE67 /* remote.framework */; };
+		329F21432917F98E0084EE67 /* remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F213D2917F98E0084EE67 /* remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		324F09EA28F0D2FE00AE6009 /* Embed Frameworks */ = {
+		329F21442917F98E0084EE67 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32BA4E7F2914324D0013ABA4 /* local.framework in Embed Frameworks */,
-				324F09E928F0D2FE00AE6009 /* domain.framework in Embed Frameworks */,
-				32BA4E82291432500013ABA4 /* remote.framework in Embed Frameworks */,
+				329F21412917F98E0084EE67 /* local.framework in Embed Frameworks */,
+				329F213F2917F98E0084EE67 /* domain.framework in Embed Frameworks */,
+				329F21432917F98E0084EE67 /* remote.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +58,10 @@
 		324F09E728F0D2FE00AE6009 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		328827AF28F1EA3800F80F65 /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
 		328827B528F1ECC400F80F65 /* Domain2Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain2Remote.swift; sourceTree = "<group>"; };
+		329F21382917F9700084EE67 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329F213B2917F98E0084EE67 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329F213C2917F98E0084EE67 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329F213D2917F98E0084EE67 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BA4E7D2914324D0013ABA4 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BA4E80291432500013ABA4 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BBE74E290334D0005900E2 /* global.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = global.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,9 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BA4E7E2914324D0013ABA4 /* local.framework in Frameworks */,
-				324F09E828F0D2FE00AE6009 /* domain.framework in Frameworks */,
-				32BA4E81291432500013ABA4 /* remote.framework in Frameworks */,
+				329F21402917F98E0084EE67 /* local.framework in Frameworks */,
+				329F213E2917F98E0084EE67 /* domain.framework in Frameworks */,
+				329F21422917F98E0084EE67 /* remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +163,10 @@
 		324F09E628F0D2FE00AE6009 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				329F213B2917F98E0084EE67 /* domain.framework */,
+				329F213C2917F98E0084EE67 /* local.framework */,
+				329F213D2917F98E0084EE67 /* remote.framework */,
+				329F21382917F9700084EE67 /* remote.framework */,
 				32BA4E80291432500013ABA4 /* remote.framework */,
 				32BA4E7D2914324D0013ABA4 /* local.framework */,
 				32BBE74E290334D0005900E2 /* global.framework */,
@@ -189,7 +197,7 @@
 				324F097028F0C46000AE6009 /* Sources */,
 				324F097128F0C46000AE6009 /* Frameworks */,
 				324F097228F0C46000AE6009 /* Resources */,
-				324F09EA28F0D2FE00AE6009 /* Embed Frameworks */,
+				329F21442917F98E0084EE67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

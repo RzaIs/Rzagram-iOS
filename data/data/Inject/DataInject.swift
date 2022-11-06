@@ -17,7 +17,7 @@ public class DataInject: BaseInject<EmptyDependency>, DomainDependency {
     public init(baseURL: String, keychainService: String) {
         self.baseURL = baseURL
         self.keychainService = keychainService
-        super.init(dependency: EmptyDependency())
+        super.init()
     }
     
     public lazy var remoteInject: RemoteInject = RemoteInject(
@@ -37,7 +37,7 @@ public class DataInject: BaseInject<EmptyDependency>, DomainDependency {
         AuthRepo(
             authRemoteDataSource: self.remoteInject.authRemoteDataSource,
             authLocalDataSource: self.localInject.authLocalDataSource,
-            rsaEncryptorProtocol: self.rsaEncryptor
+            rsaEncryptor: self.rsaEncryptor
         )
     }
 }
@@ -56,14 +56,10 @@ extension DataInject: RemoteDependency {
     }
     
     public var setAccessToken: (String) throws -> Void {
-        { token in
-            try self.localInject.authLocalDataSource.set(accessToken: token)
-        }
+        self.localInject.authLocalDataSource.set(accessToken:)
     }
     
     public var setRefreshToken: (String) throws -> Void {
-        { token in
-            try self.localInject.authLocalDataSource.set(refreshToken: token)
-        }
+        self.localInject.authLocalDataSource.set(refreshToken:)
     }
 }

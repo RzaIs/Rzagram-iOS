@@ -24,7 +24,7 @@ struct RzagramApp: App {
         dependency: RzagramApp.dataInject
     )
     static let presenterInject: PresenterInject = .init(
-        domainInject: RzagramApp.domainInject
+        dependency: RzagramApp.domainInject
     )
     
     var body: some Scene {

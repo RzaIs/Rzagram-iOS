@@ -7,23 +7,17 @@
 
 import domain
 
-public class PresenterInject: BaseInject<EmptyDependency> {
-    private  var domainInject: DomainInject
-    
-    public init(domainInject: DomainInject) {
-        self.domainInject = domainInject
-        super.init(dependency: EmptyDependency())
-    }
-    
+public class PresenterInject: BaseInject<DomainInject> {
+        
     var router: RouterProtocol {
         Router(inject: self)
     }
     
     var mainService: MainService {
         MainService(
-            authGetLoginState: self.domainInject.authGetLoginState,
-            authObserveLoginState: self.domainInject.authObserveLoginState,
-            authLogoutUseCase: self.domainInject.authLogoutUseCase
+            authGetLoginState: self.dependency.authGetLoginState,
+            authObserveLoginState: self.dependency.authObserveLoginState,
+            authLogoutUseCase: self.dependency.authLogoutUseCase
         )
     }
     
@@ -36,8 +30,8 @@ public class PresenterInject: BaseInject<EmptyDependency> {
     
     var authService: AuthService {
         AuthService(
-            authLoginUseCase: self.domainInject.authLoginUseCase,
-            authRegisterUseCase: self.domainInject.authRegisterUseCase
+            authLoginUseCase: self.dependency.authLoginUseCase,
+            authRegisterUseCase: self.dependency.authRegisterUseCase
         )
     }
     

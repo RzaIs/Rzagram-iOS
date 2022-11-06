@@ -16,7 +16,7 @@ public class LocalInject: BaseInject<EmptyDependency> {
     
     public init(keychainService: String) {
         self.keychainService = keychainService
-        super.init(dependency: EmptyDependency())
+        super.init()
     }
     
     lazy var realm: Realm = try! Realm(
