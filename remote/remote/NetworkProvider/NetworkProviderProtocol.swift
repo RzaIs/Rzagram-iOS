@@ -8,13 +8,12 @@
 import Alamofire
 
 public protocol NetworkProviderProtocol {
-    
     func request<I: Encodable, O: Decodable>(
         endpoint: String,
-       method: HTTPMethod,
-       headers: HTTPHeaders,
-       encoder: ParameterEncoder,
-       parameters: I
+        method: HTTPMethod,
+        headers: HTTPHeaders,
+        encoder: ParameterEncoder,
+        parameters: I
     ) async throws -> O
     
     func get<O: Decodable>(

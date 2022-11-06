@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329F217329182B990084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217229182B990084EE67 /* domain.framework */; };
+		329F217429182B990084EE67 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217229182B990084EE67 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329F218429182DD90084EE67 /* NetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F218329182DD90084EE67 /* NetworkProviderMock.swift */; };
+		329F218729182F0B0084EE67 /* AuthRDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F218629182F0B0084EE67 /* AuthRDSTests.swift */; };
+		329F2189291837F60084EE67 /* AuthMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F2188291837F60084EE67 /* AuthMockData.swift */; };
 		32BA4DF529142FC80013ABA4 /* remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4DEC29142FC80013ABA4 /* remote.framework */; };
-		32BA4DFA29142FC80013ABA4 /* remoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4DF929142FC80013ABA4 /* remoteTests.swift */; };
 		32BA4DFB29142FC80013ABA4 /* remote.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BA4DEF29142FC80013ABA4 /* remote.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32BA4E1629142FEB0013ABA4 /* RemoteInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E1529142FEB0013ABA4 /* RemoteInject.swift */; };
 		32BA4E1D291430000013ABA4 /* AuthLoginBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E1929142FFF0013ABA4 /* AuthLoginBody.swift */; };
@@ -23,8 +27,6 @@
 		32BA4E30291430350013ABA4 /* AuthRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E2D291430350013ABA4 /* AuthRetrier.swift */; };
 		32BA4E332914303F0013ABA4 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E312914303E0013ABA4 /* NetworkProviderProtocol.swift */; };
 		32BA4E342914303F0013ABA4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E322914303F0013ABA4 /* NetworkProvider.swift */; };
-		32BA4E7A291431CC0013ABA4 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E79291431CC0013ABA4 /* domain.framework */; };
-		32BA4E7B291431CC0013ABA4 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA4E79291431CC0013ABA4 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32BA4E8D2914338F0013ABA4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E8C2914338F0013ABA4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32BA4E7B291431CC0013ABA4 /* domain.framework in Embed Frameworks */,
+				329F217429182B990084EE67 /* domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,10 +55,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		329F217229182B990084EE67 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329F218329182DD90084EE67 /* NetworkProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderMock.swift; sourceTree = "<group>"; };
+		329F218629182F0B0084EE67 /* AuthRDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRDSTests.swift; sourceTree = "<group>"; };
+		329F2188291837F60084EE67 /* AuthMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockData.swift; sourceTree = "<group>"; };
 		32BA4DEC29142FC80013ABA4 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BA4DEF29142FC80013ABA4 /* remote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = remote.h; sourceTree = "<group>"; };
 		32BA4DF429142FC80013ABA4 /* remoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32BA4DF929142FC80013ABA4 /* remoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remoteTests.swift; sourceTree = "<group>"; };
 		32BA4E1529142FEB0013ABA4 /* RemoteInject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteInject.swift; sourceTree = "<group>"; };
 		32BA4E1929142FFF0013ABA4 /* AuthLoginBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLoginBody.swift; sourceTree = "<group>"; };
 		32BA4E1A29142FFF0013ABA4 /* AuthRegisterBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRegisterBody.swift; sourceTree = "<group>"; };
@@ -70,7 +75,6 @@
 		32BA4E2D291430350013ABA4 /* AuthRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRetrier.swift; sourceTree = "<group>"; };
 		32BA4E312914303E0013ABA4 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
 		32BA4E322914303F0013ABA4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
-		32BA4E79291431CC0013ABA4 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BA4E7A291431CC0013ABA4 /* domain.framework in Frameworks */,
+				329F217329182B990084EE67 /* domain.framework in Frameworks */,
 				32BA4E8D2914338F0013ABA4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		329F218229182DB90084EE67 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				329F218329182DD90084EE67 /* NetworkProviderMock.swift */,
+				329F2188291837F60084EE67 /* AuthMockData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		329F218529182EE60084EE67 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				329F218629182F0B0084EE67 /* AuthRDSTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		32BA4DE229142FC80013ABA4 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +149,8 @@
 		32BA4DF829142FC80013ABA4 /* remoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				32BA4DF929142FC80013ABA4 /* remoteTests.swift */,
+				329F218529182EE60084EE67 /* Tests */,
+				329F218229182DB90084EE67 /* Mocks */,
 			);
 			path = remoteTests;
 			sourceTree = "<group>";
@@ -201,7 +223,7 @@
 		32BA4E78291431CC0013ABA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32BA4E79291431CC0013ABA4 /* domain.framework */,
+				329F217229182B990084EE67 /* domain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,7 +364,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BA4DFA29142FC80013ABA4 /* remoteTests.swift in Sources */,
+				329F218729182F0B0084EE67 /* AuthRDSTests.swift in Sources */,
+				329F218429182DD90084EE67 /* NetworkProviderMock.swift in Sources */,
+				329F2189291837F60084EE67 /* AuthMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

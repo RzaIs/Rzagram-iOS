@@ -56,7 +56,6 @@
 		328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterInput.swift; sourceTree = "<group>"; };
 		328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoProtocol.swift; sourceTree = "<group>"; };
 		328827B328F1EBBE00F80F65 /* UIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIError.swift; sourceTree = "<group>"; };
-		32BBE7572903350E005900E2 /* global.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = global.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +84,6 @@
 				324F09C428F0D2CB00AE6009 /* domain */,
 				324F09CE28F0D2CB00AE6009 /* domainTests */,
 				324F09C328F0D2CB00AE6009 /* Products */,
-				32BBE7562903350E005900E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,14 +196,6 @@
 				328827B328F1EBBE00F80F65 /* UIError.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		32BBE7562903350E005900E2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				32BBE7572903350E005900E2 /* global.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
