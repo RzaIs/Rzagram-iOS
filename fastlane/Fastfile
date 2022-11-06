@@ -22,14 +22,14 @@ platform :ios do
   lane :test do |options|
     scan(
       derived_data_path: "./DerivedData",
-      scheme: "TheNewsForYou",
+      scheme: "Rzagram",
       output_directory: "./reports"
     )
     slather(
       build_directory: "./DerivedData",
       output_directory: "./reports",
-      scheme: "TheNewsForYou",
-      proj: "TheNewsForYou.xcodeproj",
+      scheme: "Rzagram",
+      proj: "Rzagram.xcodeproj",
       sonarqube_xml: true,
       github: true,
       arch: "x86_64"
