@@ -25,6 +25,7 @@
 		328454182914390F00014345 /* PresenterInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328454172914390F00014345 /* PresenterInject.swift */; };
 		329F217029182B900084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F216F29182B900084EE67 /* domain.framework */; };
 		329F217129182B900084EE67 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F216F29182B900084EE67 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329F21E629187FA50084EE67 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21E529187FA50084EE67 /* RouterMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		3261BEE929049E5300F62459 /* AuthTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeView.swift; sourceTree = "<group>"; };
 		328454172914390F00014345 /* PresenterInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInject.swift; sourceTree = "<group>"; };
 		329F216F29182B900084EE67 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329F21E529187FA50084EE67 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				325488072904556000BAF842 /* RouterProtocol.swift */,
 				325488092904557F00BAF842 /* Router.swift */,
+				329F21E529187FA50084EE67 /* RouterMock.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329F21E629187FA50084EE67 /* RouterMock.swift in Sources */,
 				3254882429046CF800BAF842 /* PrimaryButton.swift in Sources */,
 				3261BEE62904904000F62459 /* MainService.swift in Sources */,
 				32548816290457CB00BAF842 /* AuthPage.swift in Sources */,

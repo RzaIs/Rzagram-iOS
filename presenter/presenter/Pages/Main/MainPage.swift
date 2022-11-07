@@ -27,6 +27,8 @@ public struct MainPage: View, BasePage  {
     }
 }
 
+#if DEBUG
+
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
         RouterMock.router.authGetLoginStateValue = true
@@ -34,3 +36,5 @@ struct MainPage_Previews: PreviewProvider {
         return RouterMock.router.mainPage
     }
 }
+
+#endif

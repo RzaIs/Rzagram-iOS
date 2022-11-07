@@ -27,6 +27,11 @@
 		329F21A5291862100084EE67 /* AuthRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21A42918620F0084EE67 /* AuthRepoMock.swift */; };
 		329F21A7291862EA0084EE67 /* AuthMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21A6291862EA0084EE67 /* AuthMockData.swift */; };
 		329F21AA291863910084EE67 /* AuthUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21A9291863910084EE67 /* AuthUseCaseTests.swift */; };
+		329F21DC29187EE00084EE67 /* AuthLoginUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21DB29187EE00084EE67 /* AuthLoginUseCaseMock.swift */; };
+		329F21DE29187EF70084EE67 /* AuthLogoutUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21DD29187EF70084EE67 /* AuthLogoutUseCaseMock.swift */; };
+		329F21E029187F420084EE67 /* AuthRegisterUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */; };
+		329F21E229187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */; };
+		329F21E429187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,11 @@
 		329F21A42918620F0084EE67 /* AuthRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoMock.swift; sourceTree = "<group>"; };
 		329F21A6291862EA0084EE67 /* AuthMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockData.swift; sourceTree = "<group>"; };
 		329F21A9291863910084EE67 /* AuthUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCaseTests.swift; sourceTree = "<group>"; };
+		329F21DB29187EE00084EE67 /* AuthLoginUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginUseCaseMock.swift; sourceTree = "<group>"; };
+		329F21DD29187EF70084EE67 /* AuthLogoutUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLogoutUseCaseMock.swift; sourceTree = "<group>"; };
+		329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterUseCaseMock.swift; sourceTree = "<group>"; };
+		329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthObserveLoginStateUseCaseMock.swift; sourceTree = "<group>"; };
+		329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGetLoginStateUseCaseMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +199,7 @@
 		328827A828F1E8DE00F80F65 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				329F21DA29187ECF0084EE67 /* Mock */,
 				325487C82904516000BAF842 /* Base */,
 				325487C72904515100BAF842 /* Auth */,
 			);
@@ -234,6 +245,18 @@
 				329F21A9291863910084EE67 /* AuthUseCaseTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		329F21DA29187ECF0084EE67 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				329F21DB29187EE00084EE67 /* AuthLoginUseCaseMock.swift */,
+				329F21DD29187EF70084EE67 /* AuthLogoutUseCaseMock.swift */,
+				329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */,
+				329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */,
+				329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,18 +375,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329F21E029187F420084EE67 /* AuthRegisterUseCaseMock.swift in Sources */,
 				325487C62904514D00BAF842 /* AuthLoginUseCase.swift in Sources */,
 				32845416291437A200014345 /* DomainInject.swift in Sources */,
 				328827B428F1EBBE00F80F65 /* UIError.swift in Sources */,
 				3254883629047E9F00BAF842 /* BaseThrowsUseCase.swift in Sources */,
 				3254883A2904832500BAF842 /* AuthObserveLoginStateUseCase.swift in Sources */,
+				329F21E229187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift in Sources */,
+				329F21DE29187EF70084EE67 /* AuthLogoutUseCaseMock.swift in Sources */,
 				325487CA2904517100BAF842 /* BaseAsyncThrowsUseCase.swift in Sources */,
 				328827AA28F1E8EB00F80F65 /* AuthLoginInput.swift in Sources */,
 				325487CE290452BD00BAF842 /* AuthRegisterUseCase.swift in Sources */,
 				325487CC2904527400BAF842 /* BaseObserveUseCase.swift in Sources */,
 				328827AE28F1E9CA00F80F65 /* AuthRepoProtocol.swift in Sources */,
+				329F21DC29187EE00084EE67 /* AuthLoginUseCaseMock.swift in Sources */,
 				328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */,
 				3254883C2904856D00BAF842 /* AuthGetLoginStateUseCase.swift in Sources */,
+				329F21E429187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift in Sources */,
 				3254883E2904857E00BAF842 /* BaseUseCase.swift in Sources */,
 				3254883829047EBC00BAF842 /* AuthLogoutUseCase.swift in Sources */,
 			);
