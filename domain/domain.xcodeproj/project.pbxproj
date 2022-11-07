@@ -163,6 +163,18 @@
 			path = Inject;
 			sourceTree = "<group>";
 		};
+		32690B73291992430071B7FD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				329F21DB29187EE00084EE67 /* AuthLoginUseCaseMock.swift */,
+				329F21DD29187EF70084EE67 /* AuthLogoutUseCaseMock.swift */,
+				329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */,
+				329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */,
+				329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		328827A428F1E8BD00F80F65 /* RepositoryProtocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,11 +262,7 @@
 		329F21DA29187ECF0084EE67 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				329F21DB29187EE00084EE67 /* AuthLoginUseCaseMock.swift */,
-				329F21DD29187EF70084EE67 /* AuthLogoutUseCaseMock.swift */,
-				329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */,
-				329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */,
-				329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */,
+				32690B73291992430071B7FD /* Auth */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
