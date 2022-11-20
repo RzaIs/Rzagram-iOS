@@ -18,7 +18,7 @@ import presenter
 struct RzagramApp: App {
     
     static let dataInject: DataInject = .init(
-        baseURL: "http://172.20.10.4:3000",
+        baseURL: "http://localhost:3000",
         keychainService: "is.rza.Rzagram"
     )
     static let domainInject: DomainInject = .init(

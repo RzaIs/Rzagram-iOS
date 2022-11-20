@@ -16,8 +16,8 @@ protocol BasePage: View {
 extension BasePage {
     var alertView: Alert {
         Alert(
-            title: Text(self.service.error.title),
-            message: Text("\(self.service.error.description)\n\(self.service.error.code)"),
+            title: Text(self.service.error!.title),
+            message: Text("\(self.service.error!.localizedDescription)\n\(self.service.error!.code)"),
             dismissButton: .default(
                 Text("OK")
             )
@@ -36,5 +36,13 @@ extension BasePage {
                 EmptyView()
             }
         }
+    }
+    
+    func appear()  {
+        self.service.appear()
+    }
+    
+    func disappear() {
+        self.service.disappear()
     }
 }

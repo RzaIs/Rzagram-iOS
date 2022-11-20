@@ -20,9 +20,9 @@ class Logger: RequestAdapter, ResponseAdapter {
     }
     
     private func log(error: Error) {
-    #if DEBUG
-    print("\t[ERROR-BODY]: \(error)")
-    #endif
+        #if DEBUG
+        print("\t[ERROR-BODY]: \(error)")
+        #endif
     }
     
     private func log(info: String, type: LogType) {
@@ -54,32 +54,53 @@ class Logger: RequestAdapter, ResponseAdapter {
     
     func log<T: Decodable>(response: DataResponse<T, AFError>) {
         self.log(info: "", type: .start)
+        
         if let url = response.request?.url {
             self.log(info: url.path, type: .url)
+        } else {
+            self.log(info: "none", type: .url)
         }
+        
         if let statusCode = response.response?.statusCode {
             self.log(info: statusCode.description, type: .status_code)
+        } else {
+            self.log(info: "none", type: .status_code)
         }
+        
         if let data = response.data, let body = data.prettyJSON {
             self.log(info: body, type: .response_body)
+        } else {
+            self.log(info: "none", type: .response_header)
         }
+        
         if let headers = response.response?.headers {
             self.log(info: headers.description, type: .response_header)
+        } else {
+            self.log(info: "none", type: .response_header)
         }
+        
         if let error = response.error {
             self.log(error: error)
         }
+        
         self.log(info: "", type: .end)
     }
     
     func log(request: URLRequest) {
         self.log(info: "", type: .start)
+        
         if let url = request.url {
             self.log(info: url.path, type: .url)
+        } else {
+            self.log(info: "none", type: .url)
         }
+        
         if let body = request.httpBody, let json = body.prettyJSON {
             self.log(info: json, type: .request_body)
+        } else {
+            self.log(info: "none", type: .request_body)
         }
+        
         self.log(info: request.headers.description, type: .request_header)
         self.log(info: "", type: .end)
     }
@@ -88,6 +109,7 @@ class Logger: RequestAdapter, ResponseAdapter {
         self.log(request: urlRequest)
         completion(.success(urlRequest))
     }
+    
 }
 
 enum LogType {

@@ -13,6 +13,10 @@
 		324F098328F0C46000AE6009 /* data.h in Headers */ = {isa = PBXBuildFile; fileRef = 324F097728F0C46000AE6009 /* data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		328827B028F1EA3800F80F65 /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AF28F1EA3800F80F65 /* AuthRepo.swift */; };
 		328827B628F1ECC400F80F65 /* Domain2Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827B528F1ECC400F80F65 /* Domain2Remote.swift */; };
+		329163222929959B00621EF2 /* PostLocalDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329163212929959B00621EF2 /* PostLocalDataSourceMock.swift */; };
+		329163242929964900621EF2 /* PostMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329163232929964900621EF2 /* PostMockData.swift */; };
+		32916326292996E500621EF2 /* PostRemoteDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32916325292996E500621EF2 /* PostRemoteDataSourceMock.swift */; };
+		329163282929990300621EF2 /* PostRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329163272929990300621EF2 /* PostRepoTests.swift */; };
 		329F217C29182BAD0084EE67 /* remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217929182BAD0084EE67 /* remote.framework */; };
 		329F217D29182BAD0084EE67 /* remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217929182BAD0084EE67 /* remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		329F218029182C480084EE67 /* local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217829182BAD0084EE67 /* local.framework */; };
@@ -22,6 +26,12 @@
 		329F219C29184DCD0084EE67 /* AuthRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F219B29184DCD0084EE67 /* AuthRepoTests.swift */; };
 		329F219E29184E280084EE67 /* AuthLocalDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F219D29184E280084EE67 /* AuthLocalDataSourceMock.swift */; };
 		329F21A02918504B0084EE67 /* RSAEncryptorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F219F2918504B0084EE67 /* RSAEncryptorMock.swift */; };
+		32DEDC90291A8FCA00055178 /* PostRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC8F291A8FCA00055178 /* PostRepo.swift */; };
+		32DEDC92291A91DE00055178 /* Remote2Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC91291A91DE00055178 /* Remote2Domain.swift */; };
+		32DEDC94291A983F00055178 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC93291A983F00055178 /* URL+Extensions.swift */; };
+		32DEDC96291A991000055178 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC95291A991000055178 /* Date+Extensions.swift */; };
+		32DEDCA0291AA9F700055178 /* Remote2Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC9F291AA9F700055178 /* Remote2Local.swift */; };
+		32DEDCA2291AAC4600055178 /* Local2Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDCA1291AAC4600055178 /* Local2Domain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +67,10 @@
 		324F097C28F0C46000AE6009 /* dataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		328827AF28F1EA3800F80F65 /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
 		328827B528F1ECC400F80F65 /* Domain2Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain2Remote.swift; sourceTree = "<group>"; };
+		329163212929959B00621EF2 /* PostLocalDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataSourceMock.swift; sourceTree = "<group>"; };
+		329163232929964900621EF2 /* PostMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMockData.swift; sourceTree = "<group>"; };
+		32916325292996E500621EF2 /* PostRemoteDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSourceMock.swift; sourceTree = "<group>"; };
+		329163272929990300621EF2 /* PostRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepoTests.swift; sourceTree = "<group>"; };
 		329F217829182BAD0084EE67 /* local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F217929182BAD0084EE67 /* remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F219729184C960084EE67 /* AuthRemoteDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSourceMock.swift; sourceTree = "<group>"; };
@@ -64,6 +78,12 @@
 		329F219B29184DCD0084EE67 /* AuthRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoTests.swift; sourceTree = "<group>"; };
 		329F219D29184E280084EE67 /* AuthLocalDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSourceMock.swift; sourceTree = "<group>"; };
 		329F219F2918504B0084EE67 /* RSAEncryptorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAEncryptorMock.swift; sourceTree = "<group>"; };
+		32DEDC8F291A8FCA00055178 /* PostRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepo.swift; sourceTree = "<group>"; };
+		32DEDC91291A91DE00055178 /* Remote2Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote2Domain.swift; sourceTree = "<group>"; };
+		32DEDC93291A983F00055178 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		32DEDC95291A991000055178 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		32DEDC9F291AA9F700055178 /* Remote2Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote2Local.swift; sourceTree = "<group>"; };
+		32DEDCA1291AAC4600055178 /* Local2Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local2Domain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				324C98B62905B83100041045 /* RSAEncryptor.swift */,
+				32DEDC93291A983F00055178 /* URL+Extensions.swift */,
+				32DEDC95291A991000055178 /* Date+Extensions.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -139,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				328827AF28F1EA3800F80F65 /* AuthRepo.swift */,
+				32DEDC8F291A8FCA00055178 /* PostRepo.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -147,6 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				328827B528F1ECC400F80F65 /* Domain2Remote.swift */,
+				32DEDC91291A91DE00055178 /* Remote2Domain.swift */,
+				32DEDC9F291AA9F700055178 /* Remote2Local.swift */,
+				32DEDCA1291AAC4600055178 /* Local2Domain.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -183,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				329F219729184C960084EE67 /* AuthRemoteDataSourceMock.swift */,
+				32916325292996E500621EF2 /* PostRemoteDataSourceMock.swift */,
 			);
 			path = Remotes;
 			sourceTree = "<group>";
@@ -191,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				329F219D29184E280084EE67 /* AuthLocalDataSourceMock.swift */,
+				329163212929959B00621EF2 /* PostLocalDataSourceMock.swift */,
 			);
 			path = Locals;
 			sourceTree = "<group>";
@@ -199,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				329F219929184DAF0084EE67 /* AuthMockData.swift */,
+				329163232929964900621EF2 /* PostMockData.swift */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -207,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				329F219B29184DCD0084EE67 /* AuthRepoTests.swift */,
+				329163272929990300621EF2 /* PostRepoTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -326,10 +356,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DEDC92291A91DE00055178 /* Remote2Domain.swift in Sources */,
+				32DEDCA0291AA9F700055178 /* Remote2Local.swift in Sources */,
+				32DEDC96291A991000055178 /* Date+Extensions.swift in Sources */,
+				32DEDC94291A983F00055178 /* URL+Extensions.swift in Sources */,
+				32DEDCA2291AAC4600055178 /* Local2Domain.swift in Sources */,
 				322C35FC29142A3F00D05C78 /* DataInject.swift in Sources */,
 				328827B028F1EA3800F80F65 /* AuthRepo.swift in Sources */,
 				324C98B72905B83100041045 /* RSAEncryptor.swift in Sources */,
 				328827B628F1ECC400F80F65 /* Domain2Remote.swift in Sources */,
+				32DEDC90291A8FCA00055178 /* PostRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32916326292996E500621EF2 /* PostRemoteDataSourceMock.swift in Sources */,
+				329163282929990300621EF2 /* PostRepoTests.swift in Sources */,
 				329F219A29184DAF0084EE67 /* AuthMockData.swift in Sources */,
 				329F219C29184DCD0084EE67 /* AuthRepoTests.swift in Sources */,
+				329163242929964900621EF2 /* PostMockData.swift in Sources */,
+				329163222929959B00621EF2 /* PostLocalDataSourceMock.swift in Sources */,
 				329F21A02918504B0084EE67 /* RSAEncryptorMock.swift in Sources */,
 				329F219E29184E280084EE67 /* AuthLocalDataSourceMock.swift in Sources */,
 				329F219829184C960084EE67 /* AuthRemoteDataSourceMock.swift in Sources */,

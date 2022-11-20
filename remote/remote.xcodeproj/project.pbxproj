@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325E2AD4291AF9AE00FD87F1 /* PaginatedRemoteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325E2AD3291AF9AE00FD87F1 /* PaginatedRemoteDTO.swift */; };
+		329163142929796600621EF2 /* AuthorRemoteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329163132929796600621EF2 /* AuthorRemoteDTO.swift */; };
+		3291631E29298B1D00621EF2 /* PostRDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291631D29298B1D00621EF2 /* PostRDSTests.swift */; };
+		3291632029298C0700621EF2 /* PostMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291631F29298C0700621EF2 /* PostMockData.swift */; };
 		329F217329182B990084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217229182B990084EE67 /* domain.framework */; };
 		329F217429182B990084EE67 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217229182B990084EE67 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		329F218429182DD90084EE67 /* NetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F218329182DD90084EE67 /* NetworkProviderMock.swift */; };
@@ -28,6 +32,13 @@
 		32BA4E332914303F0013ABA4 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E312914303E0013ABA4 /* NetworkProviderProtocol.swift */; };
 		32BA4E342914303F0013ABA4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E322914303F0013ABA4 /* NetworkProvider.swift */; };
 		32BA4E8D2914338F0013ABA4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E8C2914338F0013ABA4 /* Alamofire */; };
+		32DEDC81291A8C5000055178 /* PostRemoteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC80291A8C5000055178 /* PostRemoteDTO.swift */; };
+		32DEDC83291A8D2E00055178 /* PostGetBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC82291A8D2E00055178 /* PostGetBody.swift */; };
+		32DEDC85291A8E1A00055178 /* PostCreateBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC84291A8E1A00055178 /* PostCreateBody.swift */; };
+		32DEDC87291A8E8200055178 /* PostTypeRemoteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC86291A8E8200055178 /* PostTypeRemoteDTO.swift */; };
+		32DEDC8A291A8EE300055178 /* PostRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC89291A8EE300055178 /* PostRemoteDataSourceProtocol.swift */; };
+		32DEDC8C291A8EF500055178 /* PostRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC8B291A8EF500055178 /* PostRemoteDataSource.swift */; };
+		32DEDC8E291A8EFC00055178 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC8D291A8EFC00055178 /* PostAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +66,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		325E2AD3291AF9AE00FD87F1 /* PaginatedRemoteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedRemoteDTO.swift; sourceTree = "<group>"; };
+		329163132929796600621EF2 /* AuthorRemoteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRemoteDTO.swift; sourceTree = "<group>"; };
+		3291631D29298B1D00621EF2 /* PostRDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRDSTests.swift; sourceTree = "<group>"; };
+		3291631F29298C0700621EF2 /* PostMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMockData.swift; sourceTree = "<group>"; };
 		329F217229182B990084EE67 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F218329182DD90084EE67 /* NetworkProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderMock.swift; sourceTree = "<group>"; };
 		329F218629182F0B0084EE67 /* AuthRDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRDSTests.swift; sourceTree = "<group>"; };
@@ -75,6 +90,13 @@
 		32BA4E2D291430350013ABA4 /* AuthRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRetrier.swift; sourceTree = "<group>"; };
 		32BA4E312914303E0013ABA4 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
 		32BA4E322914303F0013ABA4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		32DEDC80291A8C5000055178 /* PostRemoteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDTO.swift; sourceTree = "<group>"; };
+		32DEDC82291A8D2E00055178 /* PostGetBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetBody.swift; sourceTree = "<group>"; };
+		32DEDC84291A8E1A00055178 /* PostCreateBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreateBody.swift; sourceTree = "<group>"; };
+		32DEDC86291A8E8200055178 /* PostTypeRemoteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTypeRemoteDTO.swift; sourceTree = "<group>"; };
+		32DEDC89291A8EE300055178 /* PostRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		32DEDC8B291A8EF500055178 /* PostRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSource.swift; sourceTree = "<group>"; };
+		32DEDC8D291A8EFC00055178 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +120,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		329163122929795100621EF2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				329163132929796600621EF2 /* AuthorRemoteDTO.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		329F218229182DB90084EE67 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				329F218329182DD90084EE67 /* NetworkProviderMock.swift */,
 				329F2188291837F60084EE67 /* AuthMockData.swift */,
+				3291631F29298C0700621EF2 /* PostMockData.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -111,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				329F218629182F0B0084EE67 /* AuthRDSTests.swift */,
+				3291631D29298B1D00621EF2 /* PostRDSTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -167,6 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				32BA4E1829142FF80013ABA4 /* Auth */,
+				32DEDC7F291A8C1E00055178 /* Post */,
+				329163122929795100621EF2 /* User */,
+				325E2AD3291AF9AE00FD87F1 /* PaginatedRemoteDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				32BA4E22291430110013ABA4 /* Auth */,
+				32DEDC88291A8ECD00055178 /* Post */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -226,6 +262,27 @@
 				329F217229182B990084EE67 /* domain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DEDC7F291A8C1E00055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				32DEDC80291A8C5000055178 /* PostRemoteDTO.swift */,
+				32DEDC82291A8D2E00055178 /* PostGetBody.swift */,
+				32DEDC84291A8E1A00055178 /* PostCreateBody.swift */,
+				32DEDC86291A8E8200055178 /* PostTypeRemoteDTO.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		32DEDC88291A8ECD00055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				32DEDC8D291A8EFC00055178 /* PostAPI.swift */,
+				32DEDC89291A8EE300055178 /* PostRemoteDataSourceProtocol.swift */,
+				32DEDC8B291A8EF500055178 /* PostRemoteDataSource.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,15 +403,24 @@
 			files = (
 				32BA4E1629142FEB0013ABA4 /* RemoteInject.swift in Sources */,
 				32BA4E342914303F0013ABA4 /* NetworkProvider.swift in Sources */,
+				329163142929796600621EF2 /* AuthorRemoteDTO.swift in Sources */,
+				32DEDC8A291A8EE300055178 /* PostRemoteDataSourceProtocol.swift in Sources */,
 				32BA4E20291430000013ABA4 /* AuthRemoteDTO.swift in Sources */,
+				325E2AD4291AF9AE00FD87F1 /* PaginatedRemoteDTO.swift in Sources */,
 				32BA4E2E291430350013ABA4 /* AuthAdapter.swift in Sources */,
 				32BA4E332914303F0013ABA4 /* NetworkProviderProtocol.swift in Sources */,
 				32BA4E1E291430000013ABA4 /* AuthRegisterBody.swift in Sources */,
 				32BA4E1F291430000013ABA4 /* AuthPublicKeyDTO.swift in Sources */,
+				32DEDC85291A8E1A00055178 /* PostCreateBody.swift in Sources */,
 				32BA4E2F291430350013ABA4 /* Logger.swift in Sources */,
+				32DEDC83291A8D2E00055178 /* PostGetBody.swift in Sources */,
 				32BA4E272914301A0013ABA4 /* AuthRemoteDataSourceProtocol.swift in Sources */,
 				32BA4E262914301A0013ABA4 /* AuthAPI.swift in Sources */,
+				32DEDC8C291A8EF500055178 /* PostRemoteDataSource.swift in Sources */,
 				32BA4E282914301A0013ABA4 /* AuthRemoteDataSource.swift in Sources */,
+				32DEDC87291A8E8200055178 /* PostTypeRemoteDTO.swift in Sources */,
+				32DEDC8E291A8EFC00055178 /* PostAPI.swift in Sources */,
+				32DEDC81291A8C5000055178 /* PostRemoteDTO.swift in Sources */,
 				32BA4E30291430350013ABA4 /* AuthRetrier.swift in Sources */,
 				32BA4E1D291430000013ABA4 /* AuthLoginBody.swift in Sources */,
 			);
@@ -365,8 +431,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				329F218729182F0B0084EE67 /* AuthRDSTests.swift in Sources */,
+				3291632029298C0700621EF2 /* PostMockData.swift in Sources */,
 				329F218429182DD90084EE67 /* NetworkProviderMock.swift in Sources */,
 				329F2189291837F60084EE67 /* AuthMockData.swift in Sources */,
+				3291631E29298B1D00621EF2 /* PostRDSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

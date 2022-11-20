@@ -27,14 +27,15 @@ final class AuthRepoTests: XCTestCase {
         self.remoteDataSource = .init()
         self.rsaEncryptor = .init()
         self.repo = .init(
-            authRemoteDataSource: self.remoteDataSource,
-            authLocalDataSource: self.localDataSource,
+            remoteDataSource: self.remoteDataSource,
+            localDataSource: self.localDataSource,
             rsaEncryptor: self.rsaEncryptor
         )
     }
 
     override func tearDown() {
-        
+        cancellables.forEach { $0.cancel() }
+        cancellables.removeAll()
     }
     
     func testLoginSuccess() {

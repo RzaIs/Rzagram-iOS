@@ -38,3 +38,44 @@ extension AuthRegisterInput {
         )
     }
 }
+
+extension PostGetInput {
+    var toRemote: PostGetBody {
+        PostGetBody(
+            page: self.page,
+            count: self.count
+        )
+    }
+}
+
+extension PostCreateInput {
+    var toRemote: PostCreateBody {
+        let (content, type) = self.type.toRemote
+        return PostCreateBody(
+            title: self.title,
+            content: content,
+            type: type
+        )
+    }
+}
+
+extension PostCreateType {
+    var toRemote: (String, PostTypeRemoteDTO) {
+        let content: String
+        let type: PostTypeRemoteDTO
+        
+        switch self {
+        case .url(let url):
+            type = .URL
+            content = url.absoluteString
+        case .text(let text):
+            type = .TEXT
+            content = text
+        case .image(let data):
+            type = .IMAGE
+            content = "TEMP"
+        }
+        
+        return (content, type)
+    }
+}
