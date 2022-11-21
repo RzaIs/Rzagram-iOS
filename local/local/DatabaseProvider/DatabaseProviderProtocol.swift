@@ -12,6 +12,8 @@ protocol DatabaseProviderProtocol {
     func read<T: Object>() -> [T]
     func write<T: Object>(objects: [T]) throws
     func deleteAll<T: Object>(of: T.Type) throws
+    func observe<T: Object>(object: T, onChange: @escaping (T?) -> Void)
+    func observe<T: Object>(of: T.Type, onChange: @escaping ([T]) -> Void)
     func delete<T: Object>(of: T.Type, when: @escaping (T) -> Bool) throws
     func deleteAll() throws
     

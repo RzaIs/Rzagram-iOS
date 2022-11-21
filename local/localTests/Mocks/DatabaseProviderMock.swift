@@ -13,6 +13,8 @@ import Combine
 class DatabaseProviderMock: DatabaseProviderProtocol {
     
     var writeInput: PassthroughSubject<Any, Never> = .init()
+    var observeOneInput: PassthroughSubject<Any, Never> = .init()
+    var observeManyInput: PassthroughSubject<Any, Never> = .init()
     var deleteAllInput: PassthroughSubject<Any, Never> = .init()
     var deleteInput: PassthroughSubject<(Any, Any), Never> = .init()
     var cacheInput: PassthroughSubject<(Codable, UserDefaultDataKey), Never> = .init()
@@ -22,6 +24,7 @@ class DatabaseProviderMock: DatabaseProviderProtocol {
     var deleteCacheInput: PassthroughSubject<UserDefaultDataKey, Never> = .init()
     var deleteSafeCacheInput: PassthroughSubject<KeyChainDataKey, Never> = .init()
     
+    var readResult: Any? = nil
     var writeResult: Result<Void, Error> = .success(Void())
     var deleteAllResult: Result<Void, Error> = .success(Void())
     var deleteResult: Result<Void, Error> = .success(Void())
@@ -32,7 +35,11 @@ class DatabaseProviderMock: DatabaseProviderProtocol {
     var deleteSafeCacheResult: Result<Void, Error> = .success(Void())
     
     func read<T: Object>() -> [T] {
-        []
+        if let data = self.readResult as? [T] {
+            return data
+        } else {
+            return []
+        }
     }
     
     func write<T: Object>(objects: [T]) throws {
@@ -43,6 +50,14 @@ class DatabaseProviderMock: DatabaseProviderProtocol {
         case .success(_):
             break
         }
+    }
+    
+    func observe<T: Object>(object: T, onChange: @escaping (T?) -> Void) {
+        self.observeOneInput.send((object, onChange))
+    }
+    
+    func observe<T: Object>(of: T.Type, onChange: @escaping ([T]) -> Void) {
+        self.observeManyInput.send((of, onChange))
     }
     
     func deleteAll<T: Object>(of: T.Type) throws {

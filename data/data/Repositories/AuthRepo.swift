@@ -12,34 +12,34 @@ import local
 
 class AuthRepo: AuthRepoProtocol {
     
-    private let authRemoteDataSource: AuthRemoteDataSourceProtocol
-    private let authLocalDataSource: AuthLocalDataSourceProtocol
+    private let remoteDataSource: AuthRemoteDataSourceProtocol
+    private let localDataSource: AuthLocalDataSourceProtocol
     private let rsaEncryptor: RSAEncryptorProtocol
     
     init(
-        authRemoteDataSource: AuthRemoteDataSourceProtocol,
-        authLocalDataSource: AuthLocalDataSourceProtocol,
+        remoteDataSource: AuthRemoteDataSourceProtocol,
+        localDataSource: AuthLocalDataSourceProtocol,
         rsaEncryptor: RSAEncryptorProtocol
     ) {
-        self.authRemoteDataSource = authRemoteDataSource
-        self.authLocalDataSource = authLocalDataSource
+        self.remoteDataSource = remoteDataSource
+        self.localDataSource = localDataSource
         self.rsaEncryptor = rsaEncryptor
     }
     
     func login(credentials: AuthLoginInput) async throws {
         var step: Int = 0
         do {
-            let publicKey = try await self.authRemoteDataSource.getPublicKey()
+            let publicKey = try await self.remoteDataSource.getPublicKey()
             step = 1
             let credentials = try credentials.toRemote(publicKey: publicKey, self.rsaEncryptor)
             step = 2
-            let tokens = try await self.authRemoteDataSource.login(credentials: credentials)
+            let tokens = try await self.remoteDataSource.login(credentials: credentials)
             step = 3
-            try self.authLocalDataSource.set(accessToken: tokens.accessToken)
+            try self.localDataSource.set(accessToken: tokens.accessToken)
             step = 4
-            try self.authLocalDataSource.set(refreshToken: tokens.refreshToken)
+            try self.localDataSource.set(refreshToken: tokens.refreshToken)
             step = 5
-            try self.authLocalDataSource.set(loginState: true)
+            try self.localDataSource.set(loginState: true)
         } catch {
             throw error.toUIError(title: "Login Error", code: "AUTH@1.\(step)")
         }
@@ -48,39 +48,39 @@ class AuthRepo: AuthRepoProtocol {
     func register(credentials: AuthRegisterInput) async throws {
         var step: Int = 0
         do {
-            let publicKey = try await self.authRemoteDataSource.getPublicKey()
+            let publicKey = try await self.remoteDataSource.getPublicKey()
             step = 1
             let credentials = try credentials.toRemote(publicKey: publicKey, self.rsaEncryptor)
             step = 2
-            let tokens = try await self.authRemoteDataSource.register(credentials: credentials)
+            let tokens = try await self.remoteDataSource.register(credentials: credentials)
             step = 3
-            try self.authLocalDataSource.set(accessToken: tokens.accessToken)
+            try self.localDataSource.set(accessToken: tokens.accessToken)
             step = 4
-            try self.authLocalDataSource.set(refreshToken: tokens.refreshToken)
+            try self.localDataSource.set(refreshToken: tokens.refreshToken)
             step = 5
-            try self.authLocalDataSource.set(loginState: true)
+            try self.localDataSource.set(loginState: true)
         } catch {
-            throw error.toUIError(title: "Login Error", code: "AUTH@2.\(step)")
+            throw error.toUIError(title: "Register Error", code: "AUTH@2.\(step)")
         }
     }
     
     func logout() throws {
         var step: Int = 0
         do {
-            try self.authLocalDataSource.removeTokens()
+            try self.localDataSource.removeTokens()
             step = 1
-            try self.authLocalDataSource.set(loginState: false)
+            try self.localDataSource.set(loginState: false)
         } catch {
             throw error.toUIError(title: "Logout Error", code: "AUTH@3.\(step)")
         }
     }
     
     var loginState: Bool {
-        self.authLocalDataSource.loginState
+        self.localDataSource.loginState
     }
     
     var observeLoginState: AnyPublisher<Bool, Never> {
-        self.authLocalDataSource.observeLoginState
+        self.localDataSource.observeLoginState
     }
 
 }

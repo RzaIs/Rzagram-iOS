@@ -6,21 +6,20 @@
 //
 
 import domain
+import Combine
 
-class BaseService: ObservableObject{
-    @Published var isLoading: Bool
-    @Published var hasError: Bool
-    @Published var error: UIError
-    
-    init(
-        isLoading: Bool = false,
-        hasError: Bool = false,
-        error: UIError = UIError(title: "title", description: "description", code: "code")
-    ) {
-        self.isLoading = isLoading
-        self.hasError = hasError
-        self.error = error
+class BaseService: ObservableObject {
+    @Published var isLoading: Bool = false
+    @Published var hasError: Bool = false
+    @Published var error: UIError? = nil {
+        didSet {
+            if error != nil {
+                self.hasError = true
+            }
+        }
     }
+    
+    var cancellables: Set<AnyCancellable> = .init()
     
     @MainActor
     func set(loading: Bool) {
@@ -31,10 +30,15 @@ class BaseService: ObservableObject{
     func show(error: Error) {
         if let error = error as? UIError {
             self.error = error
-            self.hasError = true
         } else {
             self.error = error.toUIError(title: "Unknown Error", code: "null")
-            self.hasError = true
         }
+    }
+    
+    func appear() {}
+    
+    func disappear() {
+        self.cancellables.forEach { $0.cancel() }
+        self.cancellables.removeAll()
     }
 }

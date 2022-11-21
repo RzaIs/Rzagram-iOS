@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3291631A292985A900621EF2 /* PostLDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32916319292985A900621EF2 /* PostLDSTests.swift */; };
+		3291631C292986FB00621EF2 /* PostMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291631B292986FB00621EF2 /* PostMockData.swift */; };
 		329F21472917FDD20084EE67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 329F21462917FDD20084EE67 /* Realm */; };
 		329F21492917FDD20084EE67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 329F21482917FDD20084EE67 /* RealmSwift */; };
 		329F217629182BA20084EE67 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F217529182BA20084EE67 /* domain.framework */; };
@@ -23,6 +25,9 @@
 		32BA4E71291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E6F291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift */; };
 		32BA4E72291431A30013ABA4 /* AuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E70291431A30013ABA4 /* AuthLocalDataSource.swift */; };
 		32BA4E8A291432F70013ABA4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 32BA4E89291432F70013ABA4 /* KeychainAccess */; };
+		32DEDC99291A9FBB00055178 /* PostLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC98291A9FBB00055178 /* PostLocalDataSourceProtocol.swift */; };
+		32DEDC9C291A9FCB00055178 /* PostLocalDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC9B291A9FCB00055178 /* PostLocalDTO.swift */; };
+		32DEDCA4291AB1D300055178 /* PostLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDCA3291AB1D300055178 /* PostLocalDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32916319292985A900621EF2 /* PostLDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLDSTests.swift; sourceTree = "<group>"; };
+		3291631B292986FB00621EF2 /* PostMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMockData.swift; sourceTree = "<group>"; };
 		329F217529182BA20084EE67 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329F218B29183D710084EE67 /* DatabaseProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderMock.swift; sourceTree = "<group>"; };
 		329F218E2918420A0084EE67 /* AuthLDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLDSTests.swift; sourceTree = "<group>"; };
@@ -63,6 +70,9 @@
 		32BA4E682914316F0013ABA4 /* DataKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataKey.swift; sourceTree = "<group>"; };
 		32BA4E6F291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
 		32BA4E70291431A30013ABA4 /* AuthLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSource.swift; sourceTree = "<group>"; };
+		32DEDC98291A9FBB00055178 /* PostLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
+		32DEDC9B291A9FCB00055178 /* PostLocalDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDTO.swift; sourceTree = "<group>"; };
+		32DEDCA3291AB1D300055178 /* PostLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 			children = (
 				329F218B29183D710084EE67 /* DatabaseProviderMock.swift */,
 				329F2190291843130084EE67 /* AuthMockData.swift */,
+				3291631B292986FB00621EF2 /* PostMockData.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				329F218E2918420A0084EE67 /* AuthLDSTests.swift */,
+				32916319292985A900621EF2 /* PostLDSTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -166,6 +178,7 @@
 		32BA4E6C2914317D0013ABA4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32DEDC9A291A9FC300055178 /* Post */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				32BA4E6E2914319B0013ABA4 /* Auth */,
+				32DEDC97291A9FAD00055178 /* Post */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -193,6 +207,23 @@
 				329F217529182BA20084EE67 /* domain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DEDC97291A9FAD00055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				32DEDC98291A9FBB00055178 /* PostLocalDataSourceProtocol.swift */,
+				32DEDCA3291AB1D300055178 /* PostLocalDataSource.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		32DEDC9A291A9FC300055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				32DEDC9B291A9FCB00055178 /* PostLocalDTO.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,10 +347,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				32BA4E72291431A30013ABA4 /* AuthLocalDataSource.swift in Sources */,
+				32DEDCA4291AB1D300055178 /* PostLocalDataSource.swift in Sources */,
 				32BA4E6A2914316F0013ABA4 /* DatabaseProvider.swift in Sources */,
 				32BA4E64291430EA0013ABA4 /* LocalInject.swift in Sources */,
 				32BA4E692914316F0013ABA4 /* DatabaseProviderProtocol.swift in Sources */,
 				32BA4E71291431A30013ABA4 /* AuthLocalDataSourceProtocol.swift in Sources */,
+				32DEDC9C291A9FCB00055178 /* PostLocalDTO.swift in Sources */,
+				32DEDC99291A9FBB00055178 /* PostLocalDataSourceProtocol.swift in Sources */,
 				32BA4E6B2914316F0013ABA4 /* DataKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				329F218F2918420A0084EE67 /* AuthLDSTests.swift in Sources */,
+				3291631C292986FB00621EF2 /* PostMockData.swift in Sources */,
+				3291631A292985A900621EF2 /* PostLDSTests.swift in Sources */,
 				329F218C29183D710084EE67 /* DatabaseProviderMock.swift in Sources */,
 				329F2191291843130084EE67 /* AuthMockData.swift in Sources */,
 			);

@@ -84,6 +84,31 @@ class NetworkProvider: NetworkProviderProtocol {
         }
     }
     
+    func ping(
+        endpoint: String,
+        method: HTTPMethod,
+        headers: HTTPHeaders
+    ) async throws {
+        return try await withCheckedThrowingContinuation { continuation in
+            self.session.request(
+                self.getURL(endpoint),
+                method: method,
+                headers: headers
+            ).response { result in
+                self.logger.log(response: result)
+                if let response = result.response,
+                   response.statusCode >= 200,
+                   response.statusCode > 300 {
+                    continuation.resume(returning: Void())
+                } else if let error = result.error {
+                    continuation.resume(throwing: error)
+                } else {
+                    continuation.resume(throwing: self.unknownError)
+                }
+            }
+        }
+    }
+    
     func send<I: Encodable>(
         endpoint: String,
         method: HTTPMethod,
@@ -112,6 +137,6 @@ class NetworkProvider: NetworkProviderProtocol {
             }
         }
     }
-    
-
 }
+
+public struct EmptyParams: Encodable { }

@@ -15,7 +15,7 @@ class AuthLocalDataSource: AuthLocalDataSourceProtocol {
     init(databaseProvider: DatabaseProviderProtocol) {
         self.databaseProvider = databaseProvider
         self.loginSubject = .init(
-            databaseProvider.getSafeCache(key: .loginState) ?? false
+            databaseProvider.getCache(key: .loginState) ?? false
         )
     }
     
@@ -28,7 +28,7 @@ class AuthLocalDataSource: AuthLocalDataSourceProtocol {
     }
     
     var loginState: Bool {
-        self.databaseProvider.getSafeCache(key: .loginState) ?? false
+        self.databaseProvider.getCache(key: .loginState) ?? false
     }
     
     var observeLoginState: AnyPublisher<Bool, Never> {
@@ -44,7 +44,7 @@ class AuthLocalDataSource: AuthLocalDataSourceProtocol {
     }
     
     func set(loginState: Bool) throws {
-        try self.databaseProvider.cacheSafe(data: loginState, key: .loginState)
+        try self.databaseProvider.cache(data: loginState, key: .loginState)
         self.loginSubject.send(loginState)
     }
     
