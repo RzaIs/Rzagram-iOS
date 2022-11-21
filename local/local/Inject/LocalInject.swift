@@ -27,12 +27,22 @@ public class LocalInject: Inject<EmptyDependency> {
         )
     )
     
-    lazy var keychain: Keychain = .init(service: self.keychainService)
+    lazy var keychain: Keychain = {
+        Keychain(service: self.keychainService)
+    }()
  
-    lazy var databaseProvider: DatabaseProviderProtocol = DatabaseProvider(
-        realm: self.realm,
-        keychain: self.keychain
-    )
+    lazy var databaseProvider: DatabaseProviderProtocol = {
+        DatabaseProvider(
+            realm: self.realm,
+            keychain: self.keychain
+        )
+    }()
     
-    public lazy var authLocalDataSource: AuthLocalDataSourceProtocol = AuthLocalDataSource(databaseProvider: self.databaseProvider)
+    public lazy var authLocalDataSource: AuthLocalDataSourceProtocol = {
+        AuthLocalDataSource(databaseProvider: self.databaseProvider)
+    }()
+        
+    public lazy var postLocalDataSource: PostLocalDataSourceProtocol = {
+        PostLocalDataSource(databaseProvider: self.databaseProvider)
+    }()
 }

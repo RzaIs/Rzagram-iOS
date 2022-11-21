@@ -19,6 +19,7 @@ class NetworkProviderMock: NetworkProviderProtocol {
     
     var requestResult: Result<Void, Error> = .success(Void())
     var getResult: Result<Void, Error> = .success(Void())
+    var pingResult: Result<Void, Error> = .success(Void())
     var sendResult: Result<Void, Error> = .success(Void())
     
     func request<I: Encodable, O: Decodable>(
@@ -45,6 +46,10 @@ class NetworkProviderMock: NetworkProviderProtocol {
         switch O.self {
         case is AuthRemoteDTO.Type:
             return AuthMockData.authRemoteDTOMock as! O
+        case is PaginatedRemoteDTO<PostRemoteDTO>.Type:
+            return PostMockData.paginatedPosts as! O
+        case is PostRemoteDTO.Type:
+            return PostMockData.onePost as! O
         default:
             throw NSError(domain: "test error", code: 1)
         }
@@ -70,8 +75,28 @@ class NetworkProviderMock: NetworkProviderProtocol {
         switch O.self {
         case is AuthPublicKeyDTO.Type:
             return AuthMockData.authPublicKeyDTOMock as! O
+        case is PostRemoteDTO.Type:
+            return PostMockData.onePost as! O
         default:
             throw NSError(domain: "test error", code: 1)
+        }
+    }
+    
+    func ping(
+        endpoint: String,
+        method: HTTPMethod,
+        headers: HTTPHeaders
+    ) async throws {
+        
+        self.endpointPublisher.send(endpoint)
+        self.methodPublisher.send(method)
+        self.headersPublisher.send(headers)
+        
+        switch self.pingResult {
+        case .failure(let error):
+            throw error
+        case .success(_):
+            break
         }
     }
     

@@ -22,6 +22,12 @@ public protocol NetworkProviderProtocol {
         headers: HTTPHeaders
     ) async throws -> O
     
+    func ping(
+        endpoint: String,
+        method: HTTPMethod,
+        headers: HTTPHeaders
+    ) async throws
+    
     func send<I: Encodable>(
         endpoint: String,
         method: HTTPMethod,

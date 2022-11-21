@@ -35,6 +35,8 @@ struct InputView: View {
                 .background(self.backgroundColor.color(self.theme))
                 .textContentType(self.contentType)
                 .cornerRadius(16.0)
+                .autocapitalization(.none)
+                .autocorrectionDisabled()
         }
     }
 }

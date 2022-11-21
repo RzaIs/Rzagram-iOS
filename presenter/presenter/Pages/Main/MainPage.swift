@@ -7,20 +7,30 @@
 
 import SwiftUI
 
-public struct MainPage: View, BasePage  {
+public struct MainPage: BasePage  {
     typealias Service = MainService
     
+    @Environment(\.colorScheme) var theme
+
     var router: RouterProtocol
-    @ObservedObject var service: MainService
+    @StateObject var service: MainService
 
     public var body: some View {
         if self.service.loginState {
-            Button("Logout") {
-                Task {
-                    await self.service.logout()
-                }
-            }
-            Text("Logged in")
+            TabView {
+                self.router.homePage
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("home")
+                    }
+                self.router.homePage
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("home")
+                    }
+            }.accentColor(
+                DuoColor(.black, .white).color(self.theme)
+            )
         } else {
             self.router.authPage
         }
@@ -29,10 +39,12 @@ public struct MainPage: View, BasePage  {
 
 #if DEBUG
 
+import domain
+
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
         RouterMock.router.authGetLoginStateValue = true
-        RouterMock.router.authObserveLoginStateValue = false
+        RouterMock.router.authObserveLoginStateValue = true
         return RouterMock.router.mainPage
     }
 }

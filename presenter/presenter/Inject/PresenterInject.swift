@@ -42,4 +42,19 @@ public class PresenterInject: Inject<DomainInject> {
             service: self.authService
         )
     }
+    
+    var homeService: HomeService {
+        HomeService(
+            postGetAndCacheUseCase: self.dependency.postGetAndCacheUseCase,
+            postGetManyUseCase: self.dependency.postGetManyUseCase,
+            postGetCacheUseCase: self.dependency.postGetCacheUseCase
+        )
+    }
+    
+    var homePage: HomePage {
+        HomePage(
+            router: self.router,
+            service: self.homeService
+        )
+    }
 }

@@ -21,14 +21,16 @@ public class DataInject: Inject<EmptyDependency>, DomainDependency {
         super.init()
     }
     
-    public lazy var remoteInject: RemoteInject = RemoteInject(
-        baseURL: self.baseURL,
-        dependency: self
-    )
+    public lazy var remoteInject: RemoteInject = {
+        RemoteInject(
+            baseURL: self.baseURL,
+            dependency: self
+        )
+    }()
     
-    public lazy var localInject: LocalInject = LocalInject(
-        keychainService: self.keychainService
-    )
+    public lazy var localInject: LocalInject = {
+        LocalInject(keychainService: self.keychainService)
+    }()
     
     var rsaEncryptor: RSAEncryptorProtocol {
         RSAEncryptor()
@@ -36,9 +38,16 @@ public class DataInject: Inject<EmptyDependency>, DomainDependency {
     
     public var authRepo: AuthRepoProtocol {
         AuthRepo(
-            authRemoteDataSource: self.remoteInject.authRemoteDataSource,
-            authLocalDataSource: self.localInject.authLocalDataSource,
+            remoteDataSource: self.remoteInject.authRemoteDataSource,
+            localDataSource: self.localInject.authLocalDataSource,
             rsaEncryptor: self.rsaEncryptor
+        )
+    }
+    
+    public var postRepo: PostRepoProtocol {
+        PostRepo(
+            remoteDataSource: self.remoteInject.postRemoteDataSource,
+            localDataSource: self.localInject.postLocalDataSource
         )
     }
 }
@@ -62,5 +71,12 @@ extension DataInject: RemoteDependency {
     
     public var setRefreshToken: (String) throws -> Void {
         self.localInject.authLocalDataSource.set(refreshToken:)
+    }
+    
+    public var expireSession: () throws -> Void {
+        {
+            try self.localInject.authLocalDataSource.set(loginState: false)
+            try self.localInject.authLocalDataSource.removeTokens()
+        }
     }
 }

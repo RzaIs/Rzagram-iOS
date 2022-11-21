@@ -19,8 +19,12 @@ class RouterMock: RouterProtocol {
         MainPage(
             router: RouterMock.router,
             service: MainService(
-                authGetLoginStateUseCase: AuthGetLoginStateUseCaseMock(value: authGetLoginStateValue),
-                authObserveLoginStateUseCase: AuthObserveLoginStateUseCaseMock(value: authObserveLoginStateValue),
+                authGetLoginStateUseCase: AuthGetLoginStateUseCaseMock(
+                    value: self.authGetLoginStateValue
+                ),
+                authObserveLoginStateUseCase: AuthObserveLoginStateUseCaseMock(
+                    value: self.authObserveLoginStateValue
+                ),
                 authLogoutUseCase: AuthLogoutUseCaseMock()
             )
         )
@@ -32,6 +36,26 @@ class RouterMock: RouterProtocol {
             service: AuthService(
                 authLoginUseCase: AuthLoginUseCaseMock(),
                 authRegisterUseCase: AuthRegisterUseCaseMock()
+            )
+        )
+    }
+    
+    var postGetAndCacheUseCaseValue: PaginatedEntity<PostEntity> = .init(page: 0, count: 0, hasNext: false, data: [])
+    var postGetManyUseCaseValue: PaginatedEntity<PostEntity> = .init(page: 0, count: 0, hasNext: false, data: [])
+    var postGetCacheUseCaseValue: [PostEntity] = []
+    var homePage: HomePage {
+        HomePage(
+            router: RouterMock.router,
+            service: HomeService(
+                postGetAndCacheUseCase: PostGetAndCacheUseCaseMock(
+                    value: self.postGetAndCacheUseCaseValue
+                ),
+                postGetManyUseCase: PostGetManyUseCaseMock(
+                    value: self.postGetManyUseCaseValue
+                ),
+                postGetCacheUseCase: PostGetCacheUseCaseMock(
+                    value: self.postGetCacheUseCaseValue
+                )
             )
         )
     }

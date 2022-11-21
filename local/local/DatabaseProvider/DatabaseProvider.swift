@@ -18,6 +18,8 @@ class DatabaseProvider: DatabaseProviderProtocol {
     private let encoder: JSONEncoder = .init()
     private let decoder: JSONDecoder = .init()
     
+    private var realmNotificationTokens: Set<NotificationToken> = .init()
+    
     init(realm: Realm, keychain: Keychain) {
         self.realm = realm
         self.keychain = keychain
@@ -35,6 +37,25 @@ class DatabaseProvider: DatabaseProviderProtocol {
                 self.realm.add(objects, update: .modified)
             }
         }
+    }
+    
+    func observe<T: Object>(object: T, onChange: @escaping (T?) -> Void) {
+        let token = object.observe { [weak self] _ in
+            guard let self else { return }
+            let newObject = self.realm.objects(T.self).first { obj in
+                obj.isSameObject(as: object)
+            }
+            onChange(newObject)
+        }
+        self.realmNotificationTokens.insert(token)
+    }
+    
+    func observe<T: Object>(of: T.Type, onChange: @escaping ([T]) -> Void) {
+        let token = self.realm.objects(T.self).observe { [weak self] _ in
+            guard let self else { return }
+            onChange(self.read())
+        }
+        self.realmNotificationTokens.insert(token)
     }
     
     func deleteAll<T: Object>(of: T.Type) throws {

@@ -13,6 +13,7 @@ public protocol RemoteDependency {
     var getRefreshToken: () -> String? { get }
     var setAccessToken: (String) throws -> Void { get }
     var setRefreshToken: (String) throws -> Void { get }
+    var expireSession: () throws -> Void { get }
 }
 
 public class RemoteInject: Inject<RemoteDependency> {
@@ -37,7 +38,8 @@ public class RemoteInject: Inject<RemoteDependency> {
             baseURL: self.baseURL,
             getRefreshToken: self.dependency.getRefreshToken,
             setAccessToken: self.dependency.setAccessToken,
-            setRefreshToken: self.dependency.setRefreshToken
+            setRefreshToken: self.dependency.setRefreshToken,
+            expireSession: self.dependency.expireSession
         )
     }
     
@@ -57,5 +59,9 @@ public class RemoteInject: Inject<RemoteDependency> {
     
     public var authRemoteDataSource: AuthRemoteDataSourceProtocol {
         AuthRemoteDataSource(networkProvider: self.networkProvider)
+    }
+    
+    public var postRemoteDataSource: PostRemoteDataSourceProtocol {
+        PostRemoteDataSource(networkProvider: self.networkProvider)
     }
 }

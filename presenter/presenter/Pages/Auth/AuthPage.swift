@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct AuthPage: View, BasePage {
+struct AuthPage: BasePage {
     typealias Service = AuthService
     
     var router: RouterProtocol
-    @ObservedObject var service: AuthService
+    @StateObject var service: AuthService
     
     public var body: some View {
         ZStack {

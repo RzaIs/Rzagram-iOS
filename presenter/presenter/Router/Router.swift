@@ -21,4 +21,8 @@ class Router: RouterProtocol {
     var authPage: AuthPage {
         self.inject.authPage
     }
+    
+    var homePage: HomePage {
+        self.inject.homePage
+    }
 }

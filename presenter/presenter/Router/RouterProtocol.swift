@@ -8,6 +8,7 @@
 protocol RouterProtocol {
     var mainPage: MainPage { get }
     var authPage: AuthPage { get }
+    var homePage: HomePage { get }
 }
 
 

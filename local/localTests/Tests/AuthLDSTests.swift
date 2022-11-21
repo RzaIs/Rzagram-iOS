@@ -112,9 +112,9 @@ final class AuthLDSTests: XCTestCase {
         let exp1 = XCTestExpectation(description: "1")
         let exp2 = XCTestExpectation(description: "2")
         
-        self.databaseProvider.getSafeCacheResult = .success(AuthMockData.loginState)
+        self.databaseProvider.getCacheResult = .success(AuthMockData.loginState)
         
-        self.databaseProvider.getSafeCacheInput.sink { key in
+        self.databaseProvider.getCacheInput.sink { key in
             XCTAssertEqual(key, .loginState)
             exp1.fulfill()
         }.store(in: &self.cancellables)
@@ -134,7 +134,7 @@ final class AuthLDSTests: XCTestCase {
         
         self.databaseProvider.getSafeCacheResult = .failure(NSError(domain: "test", code: 1))
         
-        self.databaseProvider.getSafeCacheInput.sink { key in
+        self.databaseProvider.getCacheInput.sink { key in
             XCTAssertEqual(key, .loginState)
             exp1.fulfill()
         }.store(in: &self.cancellables)
@@ -153,7 +153,7 @@ final class AuthLDSTests: XCTestCase {
         let exp2 = XCTestExpectation(description: "2")
         let exp3 = XCTestExpectation(description: "3")
 
-        self.databaseProvider.cacheSafeInput.sink { (data, key) in
+        self.databaseProvider.cacheInput.sink { (data, key) in
             if let loginState = data as? Bool {
                 XCTAssertEqual(loginState, AuthMockData.loginState)
             } else {
@@ -285,7 +285,7 @@ final class AuthLDSTests: XCTestCase {
         
         self.databaseProvider.cacheSafeResult = .success(Void())
         
-        self.databaseProvider.cacheSafeInput.sink { (data, key) in
+        self.databaseProvider.cacheInput.sink { (data, key) in
             if let loginState = data as? Bool {
                 XCTAssertEqual(loginState, AuthMockData.loginState)
             } else {
@@ -309,9 +309,9 @@ final class AuthLDSTests: XCTestCase {
         let exp1 = XCTestExpectation(description: "1")
         let exp2 = XCTestExpectation(description: "2")
         
-        self.databaseProvider.cacheSafeResult = .failure(NSError(domain: "test", code: 1))
+        self.databaseProvider.cacheResult = .failure(NSError(domain: "test", code: 1))
         
-        self.databaseProvider.cacheSafeInput.sink { (data, key) in
+        self.databaseProvider.cacheInput.sink { (data, key) in
             if let loginState = data as? Bool {
                 XCTAssertEqual(loginState, AuthMockData.loginState)
             } else {

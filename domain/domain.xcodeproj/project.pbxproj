@@ -18,11 +18,17 @@
 		3254883A2904832500BAF842 /* AuthObserveLoginStateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488392904832500BAF842 /* AuthObserveLoginStateUseCase.swift */; };
 		3254883C2904856D00BAF842 /* AuthGetLoginStateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254883B2904856D00BAF842 /* AuthGetLoginStateUseCase.swift */; };
 		3254883E2904857E00BAF842 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254883D2904857E00BAF842 /* BaseUseCase.swift */; };
+		325E2AD6291AFAAC00FD87F1 /* PaginatedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325E2AD5291AFAAC00FD87F1 /* PaginatedEntity.swift */; };
 		32845416291437A200014345 /* DomainInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32845415291437A200014345 /* DomainInject.swift */; };
 		328827AA28F1E8EB00F80F65 /* AuthLoginInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827A928F1E8EB00F80F65 /* AuthLoginInput.swift */; };
 		328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */; };
 		328827AE28F1E9CA00F80F65 /* AuthRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */; };
 		328827B428F1EBBE00F80F65 /* UIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328827B328F1EBBE00F80F65 /* UIError.swift */; };
+		329162F529294AF800621EF2 /* PostGetAndCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329162F429294AF800621EF2 /* PostGetAndCacheUseCase.swift */; };
+		329162F729294B8600621EF2 /* PostGetAndCacheUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329162F629294B8600621EF2 /* PostGetAndCacheUseCaseMock.swift */; };
+		329162F929294BC500621EF2 /* PostGetCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329162F829294BC500621EF2 /* PostGetCacheUseCase.swift */; };
+		329162FB29294C1500621EF2 /* PostGetCacheUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329162FA29294C1500621EF2 /* PostGetCacheUseCaseMock.swift */; };
+		3291631829297A2200621EF2 /* AuthorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291631729297A2200621EF2 /* AuthorEntity.swift */; };
 		329F215F291814B90084EE67 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 329F215E291814B90084EE67 /* Inject */; };
 		329F21A5291862100084EE67 /* AuthRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21A42918620F0084EE67 /* AuthRepoMock.swift */; };
 		329F21A7291862EA0084EE67 /* AuthMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21A6291862EA0084EE67 /* AuthMockData.swift */; };
@@ -32,6 +38,23 @@
 		329F21E029187F420084EE67 /* AuthRegisterUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */; };
 		329F21E229187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */; };
 		329F21E429187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */; };
+		32B554F2292ABE5E008DBC5F /* PostRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B554F1292ABE5E008DBC5F /* PostRepoMock.swift */; };
+		32B554F4292AC002008DBC5F /* PostMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B554F3292AC002008DBC5F /* PostMockData.swift */; };
+		32B554F6292AC071008DBC5F /* PostUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B554F5292AC071008DBC5F /* PostUseCaseTests.swift */; };
+		32B554F8292AC404008DBC5F /* PostClearCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B554F7292AC404008DBC5F /* PostClearCacheUseCase.swift */; };
+		32B554FA292AC40B008DBC5F /* PostClearCacheUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B554F9292AC40B008DBC5F /* PostClearCacheUseCaseMock.swift */; };
+		32DEDC6E291A845D00055178 /* PostGetManyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC6D291A845D00055178 /* PostGetManyUseCase.swift */; };
+		32DEDC72291A84A600055178 /* PostGetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC71291A84A600055178 /* PostGetInput.swift */; };
+		32DEDC74291A852100055178 /* PostRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC73291A852100055178 /* PostRepoProtocol.swift */; };
+		32DEDC76291A85B700055178 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC75291A85B700055178 /* PostEntity.swift */; };
+		32DEDC78291A88FF00055178 /* PostCreateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC77291A88FF00055178 /* PostCreateInput.swift */; };
+		32DEDC7A291A8AD700055178 /* PostGetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC79291A8AD700055178 /* PostGetUseCase.swift */; };
+		32DEDC7C291A8B1500055178 /* PostCreateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC7B291A8B1500055178 /* PostCreateUseCase.swift */; };
+		32DEDC7E291A8BAC00055178 /* PostDeleteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDC7D291A8BAC00055178 /* PostDeleteUseCase.swift */; };
+		32DEDCA8291AC0CD00055178 /* PostGetManyUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDCA7291AC0CD00055178 /* PostGetManyUseCaseMock.swift */; };
+		32DEDCAA291AC18500055178 /* PostGetUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDCA9291AC18500055178 /* PostGetUseCaseMock.swift */; };
+		32DEDCAC291AC1B800055178 /* PostCreateUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDCAB291AC1B800055178 /* PostCreateUseCaseMock.swift */; };
+		32DEDCAE291AC1E900055178 /* PostDeleteUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DEDCAD291AC1E900055178 /* PostDeleteUseCaseMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +80,17 @@
 		325488392904832500BAF842 /* AuthObserveLoginStateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthObserveLoginStateUseCase.swift; sourceTree = "<group>"; };
 		3254883B2904856D00BAF842 /* AuthGetLoginStateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGetLoginStateUseCase.swift; sourceTree = "<group>"; };
 		3254883D2904857E00BAF842 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		325E2AD5291AFAAC00FD87F1 /* PaginatedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedEntity.swift; sourceTree = "<group>"; };
 		32845415291437A200014345 /* DomainInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainInject.swift; sourceTree = "<group>"; };
 		328827A928F1E8EB00F80F65 /* AuthLoginInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginInput.swift; sourceTree = "<group>"; };
 		328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterInput.swift; sourceTree = "<group>"; };
 		328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoProtocol.swift; sourceTree = "<group>"; };
 		328827B328F1EBBE00F80F65 /* UIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIError.swift; sourceTree = "<group>"; };
+		329162F429294AF800621EF2 /* PostGetAndCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetAndCacheUseCase.swift; sourceTree = "<group>"; };
+		329162F629294B8600621EF2 /* PostGetAndCacheUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetAndCacheUseCaseMock.swift; sourceTree = "<group>"; };
+		329162F829294BC500621EF2 /* PostGetCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetCacheUseCase.swift; sourceTree = "<group>"; };
+		329162FA29294C1500621EF2 /* PostGetCacheUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetCacheUseCaseMock.swift; sourceTree = "<group>"; };
+		3291631729297A2200621EF2 /* AuthorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorEntity.swift; sourceTree = "<group>"; };
 		329F21A42918620F0084EE67 /* AuthRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepoMock.swift; sourceTree = "<group>"; };
 		329F21A6291862EA0084EE67 /* AuthMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockData.swift; sourceTree = "<group>"; };
 		329F21A9291863910084EE67 /* AuthUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCaseTests.swift; sourceTree = "<group>"; };
@@ -70,6 +99,23 @@
 		329F21DF29187F420084EE67 /* AuthRegisterUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterUseCaseMock.swift; sourceTree = "<group>"; };
 		329F21E129187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthObserveLoginStateUseCaseMock.swift; sourceTree = "<group>"; };
 		329F21E329187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGetLoginStateUseCaseMock.swift; sourceTree = "<group>"; };
+		32B554F1292ABE5E008DBC5F /* PostRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepoMock.swift; sourceTree = "<group>"; };
+		32B554F3292AC002008DBC5F /* PostMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMockData.swift; sourceTree = "<group>"; };
+		32B554F5292AC071008DBC5F /* PostUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUseCaseTests.swift; sourceTree = "<group>"; };
+		32B554F7292AC404008DBC5F /* PostClearCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostClearCacheUseCase.swift; sourceTree = "<group>"; };
+		32B554F9292AC40B008DBC5F /* PostClearCacheUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostClearCacheUseCaseMock.swift; sourceTree = "<group>"; };
+		32DEDC6D291A845D00055178 /* PostGetManyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetManyUseCase.swift; sourceTree = "<group>"; };
+		32DEDC71291A84A600055178 /* PostGetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetInput.swift; sourceTree = "<group>"; };
+		32DEDC73291A852100055178 /* PostRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepoProtocol.swift; sourceTree = "<group>"; };
+		32DEDC75291A85B700055178 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		32DEDC77291A88FF00055178 /* PostCreateInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreateInput.swift; sourceTree = "<group>"; };
+		32DEDC79291A8AD700055178 /* PostGetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetUseCase.swift; sourceTree = "<group>"; };
+		32DEDC7B291A8B1500055178 /* PostCreateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreateUseCase.swift; sourceTree = "<group>"; };
+		32DEDC7D291A8BAC00055178 /* PostDeleteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDeleteUseCase.swift; sourceTree = "<group>"; };
+		32DEDCA7291AC0CD00055178 /* PostGetManyUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetManyUseCaseMock.swift; sourceTree = "<group>"; };
+		32DEDCA9291AC18500055178 /* PostGetUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGetUseCaseMock.swift; sourceTree = "<group>"; };
+		32DEDCAB291AC1B800055178 /* PostCreateUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreateUseCaseMock.swift; sourceTree = "<group>"; };
+		32DEDCAD291AC1E900055178 /* PostDeleteUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDeleteUseCaseMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				328827AD28F1E9CA00F80F65 /* AuthRepoProtocol.swift */,
+				32DEDC73291A852100055178 /* PostRepoProtocol.swift */,
 			);
 			path = RepositoryProtocols;
 			sourceTree = "<group>";
@@ -195,6 +242,9 @@
 		328827A628F1E8CC00F80F65 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				3291631529297A0A00621EF2 /* Post */,
+				3291631629297A1300621EF2 /* User */,
+				325E2AD5291AFAAC00FD87F1 /* PaginatedEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -202,8 +252,8 @@
 		328827A728F1E8D400F80F65 /* Inputs */ = {
 			isa = PBXGroup;
 			children = (
-				328827A928F1E8EB00F80F65 /* AuthLoginInput.swift */,
-				328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */,
+				32DEDC6F291A848900055178 /* Auth */,
+				32DEDC70291A849000055178 /* Post */,
 			);
 			path = Inputs;
 			sourceTree = "<group>";
@@ -214,6 +264,7 @@
 				329F21DA29187ECF0084EE67 /* Mock */,
 				325487C82904516000BAF842 /* Base */,
 				325487C72904515100BAF842 /* Auth */,
+				32DEDC67291A83AF00055178 /* Post */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -224,6 +275,22 @@
 				328827B328F1EBBE00F80F65 /* UIError.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		3291631529297A0A00621EF2 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				32DEDC75291A85B700055178 /* PostEntity.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		3291631629297A1300621EF2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3291631729297A2200621EF2 /* AuthorEntity.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		329F21A1291861EB0084EE67 /* Mocks */ = {
@@ -239,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				329F21A6291862EA0084EE67 /* AuthMockData.swift */,
+				32B554F3292AC002008DBC5F /* PostMockData.swift */,
 			);
 			path = Datas;
 			sourceTree = "<group>";
@@ -247,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				329F21A42918620F0084EE67 /* AuthRepoMock.swift */,
+				32B554F1292ABE5E008DBC5F /* PostRepoMock.swift */,
 			);
 			path = Repos;
 			sourceTree = "<group>";
@@ -255,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				329F21A9291863910084EE67 /* AuthUseCaseTests.swift */,
+				32B554F5292AC071008DBC5F /* PostUseCaseTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -263,8 +333,55 @@
 			isa = PBXGroup;
 			children = (
 				32690B73291992430071B7FD /* Auth */,
+				32DEDC68291A83F000055178 /* Post */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		32DEDC67291A83AF00055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				329162F429294AF800621EF2 /* PostGetAndCacheUseCase.swift */,
+				32DEDC6D291A845D00055178 /* PostGetManyUseCase.swift */,
+				32DEDC79291A8AD700055178 /* PostGetUseCase.swift */,
+				32DEDC7B291A8B1500055178 /* PostCreateUseCase.swift */,
+				32DEDC7D291A8BAC00055178 /* PostDeleteUseCase.swift */,
+				329162F829294BC500621EF2 /* PostGetCacheUseCase.swift */,
+				32B554F7292AC404008DBC5F /* PostClearCacheUseCase.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		32DEDC68291A83F000055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				329162F629294B8600621EF2 /* PostGetAndCacheUseCaseMock.swift */,
+				32DEDCA7291AC0CD00055178 /* PostGetManyUseCaseMock.swift */,
+				32DEDCA9291AC18500055178 /* PostGetUseCaseMock.swift */,
+				32DEDCAB291AC1B800055178 /* PostCreateUseCaseMock.swift */,
+				32DEDCAD291AC1E900055178 /* PostDeleteUseCaseMock.swift */,
+				329162FA29294C1500621EF2 /* PostGetCacheUseCaseMock.swift */,
+				32B554F9292AC40B008DBC5F /* PostClearCacheUseCaseMock.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		32DEDC6F291A848900055178 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				328827A928F1E8EB00F80F65 /* AuthLoginInput.swift */,
+				328827AB28F1E93600F80F65 /* AuthRegisterInput.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		32DEDC70291A849000055178 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				32DEDC71291A84A600055178 /* PostGetInput.swift */,
+				32DEDC77291A88FF00055178 /* PostCreateInput.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,25 +500,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DEDCAA291AC18500055178 /* PostGetUseCaseMock.swift in Sources */,
+				329162FB29294C1500621EF2 /* PostGetCacheUseCaseMock.swift in Sources */,
 				329F21E029187F420084EE67 /* AuthRegisterUseCaseMock.swift in Sources */,
+				32DEDCAE291AC1E900055178 /* PostDeleteUseCaseMock.swift in Sources */,
 				325487C62904514D00BAF842 /* AuthLoginUseCase.swift in Sources */,
+				32DEDC76291A85B700055178 /* PostEntity.swift in Sources */,
 				32845416291437A200014345 /* DomainInject.swift in Sources */,
 				328827B428F1EBBE00F80F65 /* UIError.swift in Sources */,
+				3291631829297A2200621EF2 /* AuthorEntity.swift in Sources */,
 				3254883629047E9F00BAF842 /* BaseThrowsUseCase.swift in Sources */,
+				32B554F8292AC404008DBC5F /* PostClearCacheUseCase.swift in Sources */,
+				329162F929294BC500621EF2 /* PostGetCacheUseCase.swift in Sources */,
 				3254883A2904832500BAF842 /* AuthObserveLoginStateUseCase.swift in Sources */,
 				329F21E229187F5E0084EE67 /* AuthObserveLoginStateUseCaseMock.swift in Sources */,
 				329F21DE29187EF70084EE67 /* AuthLogoutUseCaseMock.swift in Sources */,
 				325487CA2904517100BAF842 /* BaseAsyncThrowsUseCase.swift in Sources */,
+				32DEDCA8291AC0CD00055178 /* PostGetManyUseCaseMock.swift in Sources */,
+				32B554FA292AC40B008DBC5F /* PostClearCacheUseCaseMock.swift in Sources */,
+				32DEDC78291A88FF00055178 /* PostCreateInput.swift in Sources */,
 				328827AA28F1E8EB00F80F65 /* AuthLoginInput.swift in Sources */,
+				325E2AD6291AFAAC00FD87F1 /* PaginatedEntity.swift in Sources */,
+				329162F729294B8600621EF2 /* PostGetAndCacheUseCaseMock.swift in Sources */,
 				325487CE290452BD00BAF842 /* AuthRegisterUseCase.swift in Sources */,
 				325487CC2904527400BAF842 /* BaseObserveUseCase.swift in Sources */,
 				328827AE28F1E9CA00F80F65 /* AuthRepoProtocol.swift in Sources */,
 				329F21DC29187EE00084EE67 /* AuthLoginUseCaseMock.swift in Sources */,
 				328827AC28F1E93600F80F65 /* AuthRegisterInput.swift in Sources */,
 				3254883C2904856D00BAF842 /* AuthGetLoginStateUseCase.swift in Sources */,
+				32DEDC6E291A845D00055178 /* PostGetManyUseCase.swift in Sources */,
+				32DEDC72291A84A600055178 /* PostGetInput.swift in Sources */,
+				32DEDC7E291A8BAC00055178 /* PostDeleteUseCase.swift in Sources */,
 				329F21E429187F7A0084EE67 /* AuthGetLoginStateUseCaseMock.swift in Sources */,
 				3254883E2904857E00BAF842 /* BaseUseCase.swift in Sources */,
+				32DEDCAC291AC1B800055178 /* PostCreateUseCaseMock.swift in Sources */,
 				3254883829047EBC00BAF842 /* AuthLogoutUseCase.swift in Sources */,
+				32DEDC7C291A8B1500055178 /* PostCreateUseCase.swift in Sources */,
+				329162F529294AF800621EF2 /* PostGetAndCacheUseCase.swift in Sources */,
+				32DEDC74291A852100055178 /* PostRepoProtocol.swift in Sources */,
+				32DEDC7A291A8AD700055178 /* PostGetUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +547,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				329F21A7291862EA0084EE67 /* AuthMockData.swift in Sources */,
+				32B554F6292AC071008DBC5F /* PostUseCaseTests.swift in Sources */,
+				32B554F4292AC002008DBC5F /* PostMockData.swift in Sources */,
 				329F21A5291862100084EE67 /* AuthRepoMock.swift in Sources */,
 				329F21AA291863910084EE67 /* AuthUseCaseTests.swift in Sources */,
+				32B554F2292ABE5E008DBC5F /* PostRepoMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
